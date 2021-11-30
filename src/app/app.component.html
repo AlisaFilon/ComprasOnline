@@ -1,20 +1,28 @@
 
-
-
-<div class="main">
-  <div>
-    <mat-card class="example-card">
-      <mat-card-content>
-        <h1>
-         Bienvenida
-        </h1>
-      </mat-card-content>
-      <p>Si esta listo para comenzar a interactual con mi tienda online</p>
-      <mat-card-actions>
-        <button mat-stroked-button color="primary">Haga Clic</button>
-      </mat-card-actions>
-    </mat-card>
-  </div>
+<div class="main-border">
+  <mat-toolbar>
+      <button mat-icon-button class="example-icon">
+        <h1>Home</h1>
+      </button>
+    <span class="example-spacer"></span>
+  </mat-toolbar>
 </div>
-  <router-outlet></router-outlet>
+
+<div class="main-card">
+    <mat-card class="example-card">
+          <mat-card-content>
+            <h1>
+             Bienvenida
+            </h1>
+          </mat-card-content>
+             <h4>Si esta listo para comenzar a interactual con mi tienda online</h4>
+          <mat-card-actions>
+            <button mat-stroked-button color="primary">Haga Clic</button>
+          </mat-card-actions>
+    </mat-card>
+</div>
+
+
+
+<router-outlet></router-outlet>
 
