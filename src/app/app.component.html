@@ -1,12 +1,14 @@
 <div class="main-border">
-  <mat-toolbar>
-    <button mat-icon-button class="example-icon">
-      <h1>Home</h1>
-    </button>
-    <span class="example-spacer"></span>
-  </mat-toolbar>
-</div>
+<mat-toolbar>
+  <button mat-icon-button class="example-icon">
+    <h1> {{toolbarname}}</h1>
+  </button>
 
+  <button mat-icon-button color="warn">
+    <mat-icon>add_shopping_cart</mat-icon>
+  </button>
+</mat-toolbar>
+</div>
 
 <router-outlet></router-outlet>
 

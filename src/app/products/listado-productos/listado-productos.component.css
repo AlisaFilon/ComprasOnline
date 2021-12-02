@@ -1,0 +1,28 @@
+.listado-productos {
+     background-color: #F1F5F9;
+     height: 100vh;
+     display: flex;
+     justify-content: center;
+     align-items: center;
+
+}
+
+
+.material-icons {
+    font-size: 3rem;
+    margin-left: 1.2rem;
+    margin-top: 1.2rem;
+}
+
+
+.listado-productos-card-tres {
+    flex-direction: row;
+    display: flex;
+}
+.listado-productos-card {
+      height: 25rem;
+      width: 20rem;
+      margin: 2rem;
+    }
+
+

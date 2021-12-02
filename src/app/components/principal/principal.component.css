@@ -1,12 +1,7 @@
-.example-spacer {
+/*.example-spacer {
   flex: 1 1 auto;
-}
-
-.mat-toolbar {
-background-color: white;
-}
-
-.main-card {
+}*/
+.card-principal {
   background-color: #F1F5F9;
   height: 100vh;
   display: flex;
@@ -14,26 +9,12 @@ background-color: white;
   align-items: center;
 }
 
-.example-card {
+.card-principal-bienvenida {
 /*  max-width: 400px;*/
   width: 80rem;
   height: 20rem;
-}
-
-.example-header-image {
-  background-image: url('https://material.angular.io/assets/img/examples/shiba1.jpg');
-  background-size: cover;
-}
-h4 {
-    display: flex;
-    justify-content: center;
-    margin: 10rem;
-
-}
-.mat-card {
   box-shadow: rgba(17, 12, 46, 0.15) 0px 48px 100px 0px;
   border-radius: 0.5rem;
-
 }
 
 .mat-card-content  {
@@ -43,6 +24,11 @@ h4 {
     align-items: center;
 }
 
+h4 {
+    display: flex;
+    justify-content: center;
+    margin: 10rem;
+}
 .mat-card-actions  {
     display: flex;
     justify-content: center;
