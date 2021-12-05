@@ -1,0 +1,35 @@
+.mat-toolbar {
+  background-color: white;
+  justify-content: space-between;
+  padding: 2rem;
+}
+h1 {
+font-size: 1.5rem;
+}
+.mat-icon {
+font-size: 2.5rem;
+}
+
+.home {
+   background-color: #F1F5F9;
+   height: 100vh;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+}
+
+.card-home-principal {
+  height: 15rem;
+  width: 30rem;
+  margin: 2rem;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  box-shadow: rgba(17, 12, 46, 0.15) 0px 48px 100px 0px;
+  border-radius: 0.5rem;
+
+}
+
+
+

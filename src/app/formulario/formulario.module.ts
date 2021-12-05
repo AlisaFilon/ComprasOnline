@@ -1,6 +1,6 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
-import { FormularioRoutingModule } from './ventas-routing.module';
+
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import {MatCardModule} from '@angular/material/card';
 import {MatButtonModule} from '@angular/material/button';
@@ -9,12 +9,12 @@ import {MatIconModule} from '@angular/material/icon';
 import {MatMenuModule} from '@angular/material/menu';
 import {RouterModule, Routes} from '@angular/router';
 import { CommonModule } from '@angular/common';
-import { FormularioComponent } from './formulario/formulario.component';
+import { FormularioComponent } from './formulario.component';
 
 
-const appRoutes: Routes = [
-{path: '', component: FormularioComponent },
-{path: 'FormularioComponent', component: FormularioComponent },
+
+const formularioRoutes: Routes = [
+{path: 'formulario-component', component: FormularioComponent },
 ]
 
 
@@ -24,9 +24,8 @@ const appRoutes: Routes = [
   FormularioComponent
   ],
   imports: [
-        CommonModule
+        CommonModule,
         BrowserModule,
-        FormularioRoutingModule,
         BrowserAnimationsModule,
         MatCardModule,
         MatButtonModule,
@@ -35,9 +34,9 @@ const appRoutes: Routes = [
         MatMenuModule,
         RouterModule.forRoot(formularioRoutes)
   ],
-  providers: [],
-      bootstrap: [
-     FormularioComponent
-      ]
+  exports: [FormularioComponent
+  ],
+      providers: [],
+      bootstrap: [FormularioComponent]
 })
 export class FormularioModule { }

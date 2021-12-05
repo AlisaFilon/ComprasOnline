@@ -1,6 +1,6 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
-import { VentasRoutingModule } from './ventas-routing.module';
+
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import {MatCardModule} from '@angular/material/card';
 import {MatButtonModule} from '@angular/material/button';
@@ -9,14 +9,13 @@ import {MatIconModule} from '@angular/material/icon';
 import {MatMenuModule} from '@angular/material/menu';
 import {RouterModule, Routes} from '@angular/router';
 import { CommonModule } from '@angular/common';
-import { ListadoVentasComponent } from './ventas/listado-ventas/listado-ventas.component';
-import { DetallesVentaComponent } from './ventas/detalles-venta/detalles-venta.component';
+import { ListadoVentasComponent } from './listado-ventas/listado-ventas.component';
+import { DetallesVentaComponent } from './detalles-venta/detalles-venta.component';
 
 
 
 const ventasRoutes: Routes = [
-{path: '', component: DetallesVentaComponent },
-{path: 'DetallesVenta', component: DetallesVentaComponent },
+{path: 'detalles-venta', component: DetallesVentaComponent },
 {path: 'listado-ventas', component: ListadoVentasComponent }
 ]
 
@@ -25,10 +24,10 @@ const ventasRoutes: Routes = [
     DetallesVentaComponent,
     ListadoVentasComponent
   ],
+
   imports: [
     CommonModule,
     BrowserModule,
-    VentasRoutingModule,
     BrowserAnimationsModule,
     MatCardModule,
     MatButtonModule,
@@ -37,6 +36,11 @@ const ventasRoutes: Routes = [
     MatMenuModule,
     RouterModule.forRoot(ventasRoutes)
   ],
+  exports:[
+  DetallesVentaComponent,
+  ListadoVentasComponent
+  ],
+
   providers: [],
     bootstrap: [
     DetallesVentaComponent,

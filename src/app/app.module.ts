@@ -11,12 +11,15 @@ import {MatMenuModule} from '@angular/material/menu';
 import {RouterModule, Routes} from '@angular/router';
 import { PrincipalComponent } from './principal/principal.component';
 import { HomeComponent } from './home/home.component';
+import { FormularioModule } from './formulario/formulario.module';
+import { VentasModule } from './ventas/ventas.module';
+import { ProductModule } from './products/product.module';
+
 
 
 
 const appRoutes: Routes = [
 {path: '', component: PrincipalComponent },
-{path: 'PrincipalComponent', component: PrincipalComponent },
 {path: 'home', component: HomeComponent }
 ]
 
@@ -27,6 +30,9 @@ const appRoutes: Routes = [
     HomeComponent
    ],
   imports: [
+    FormularioModule,
+    VentasModule,
+    ProductModule,
     BrowserModule,
     AppRoutingModule,
     BrowserAnimationsModule,
