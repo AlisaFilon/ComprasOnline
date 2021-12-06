@@ -17,7 +17,6 @@ import { ProductModule } from './products/product.module';
 
 
 
-
 const appRoutes: Routes = [
 {path: '', component: PrincipalComponent },
 {path: 'home', component: HomeComponent }

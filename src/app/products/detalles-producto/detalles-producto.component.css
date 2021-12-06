@@ -1,0 +1,66 @@
+/*.detalles-producto {
+  max-width: 400px;
+}*/
+.mat-toolbar {
+background-color: white;
+}
+.mat-icon {
+width: 90rem;
+font-size: 2rem;
+}
+.card-principal {
+  background-color: #F1F5F9;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.detalles-producto {
+width: 70 rem;
+height: 35rem;
+display: flex;
+max-width: 80rem;
+}
+
+.mat-card-image:first-child {
+width: 42rem;
+height: 37rem;
+}
+
+.mat-card-header {
+    display: flex;
+    flex-direction: row;
+    margin-left: 3rem;
+   }
+
+ul {
+margin-left: 4rem;
+}
+
+.mat-icon-button i, .mat-icon-button .mat-icon {
+    line-height: 24px;
+    margin-left: 36rem;
+}
+
+
+.mat-card-header .mat-card-title {
+    margin-bottom: 60px;
+    font-size: 2rem;
+}
+h2 {
+margin-left: 5rem;
+font-size: 1.5rem;
+color: red;
+}
+.mat-card-header .mat-card-subtitle {
+  font-size: 1.5rem;
+  font-weight: bold;
+  text-decoration: underline;
+  color: black;
+}
+
+mat-card-subtitle, .mat-card-content {
+    font-size: 14px;
+    margin-right: 3rem;
+}

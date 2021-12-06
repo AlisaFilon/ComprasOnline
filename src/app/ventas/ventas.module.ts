@@ -14,6 +14,7 @@ import { DetallesVentaComponent } from './detalles-venta/detalles-venta.componen
 import {MatTableModule} from '@angular/material/table';
 
 
+
 const ventasRoutes: Routes = [
 {path: 'detalles-venta', component: DetallesVentaComponent },
 {path: 'listado-ventas', component: ListadoVentasComponent }
@@ -22,7 +23,7 @@ const ventasRoutes: Routes = [
 @NgModule({
   declarations: [
     DetallesVentaComponent,
-    ListadoVentasComponent
+    ListadoVentasComponent,
   ],
 
   imports: [
@@ -49,3 +50,4 @@ const ventasRoutes: Routes = [
     ]
 })
 export class VentasModule { }
+

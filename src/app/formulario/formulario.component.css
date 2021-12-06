@@ -1,0 +1,41 @@
+.mat-toolbar {
+  background-color: white;
+  justify-content: space-between;
+  padding: 2rem;
+}
+h1 {
+font-size: 1.5rem;
+}
+.mat-icon {
+font-size: 2.5rem;
+}
+
+.form {
+  background-color: #F1F5F9;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  }
+.example-form {
+  min-width: 60rem;
+  max-width: 40rem;
+  padding: 2rem;
+  box-shadow: rgba(17, 12, 46, 0.15) 0px 48px 100px 0px;
+  border-radius: 0.5rem;
+}
+
+.example-full-width {
+  width: 100%;
+}
+
+.example-full-width2 {
+  width: 50%;
+}
+td {
+  padding-right: 8px;
+}
+button {
+  margin-left: 45rem;
+  width: 15rem;
+}

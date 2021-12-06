@@ -1,6 +1,5 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
-
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import {MatCardModule} from '@angular/material/card';
 import {MatButtonModule} from '@angular/material/button';
@@ -10,11 +9,11 @@ import {MatMenuModule} from '@angular/material/menu';
 import {RouterModule, Routes} from '@angular/router';
 import { CommonModule } from '@angular/common';
 import { FormularioComponent } from './formulario.component';
-
+import {MatInputModule} from '@angular/material/input';
 
 
 const formularioRoutes: Routes = [
-{path: 'formulario-component', component: FormularioComponent },
+{path: 'formulario', component: FormularioComponent },
 ]
 
 
@@ -32,6 +31,7 @@ const formularioRoutes: Routes = [
         MatToolbarModule,
         MatIconModule,
         MatMenuModule,
+        MatInputModule,
         RouterModule.forRoot(formularioRoutes)
   ],
   exports: [FormularioComponent
