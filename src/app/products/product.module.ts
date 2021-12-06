@@ -11,6 +11,7 @@ import {RouterModule, Routes} from '@angular/router';
 import { CommonModule } from '@angular/common';
 import { ListadoProductosComponent } from './listado-productos/listado-productos.component';
 import { DetallesProductoComponent } from './detalles-producto/detalles-producto.component';
+import { ProductCardComponent } from './product-card/product-card.component';
 
 
 const productRoutes: Routes = [
@@ -22,7 +23,8 @@ const productRoutes: Routes = [
 @NgModule({
   declarations: [
   DetallesProductoComponent,
-  ListadoProductosComponent
+  ListadoProductosComponent,
+  ProductCardComponent
   ],
   imports: [
       CommonModule,

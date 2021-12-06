@@ -11,7 +11,7 @@ import {RouterModule, Routes} from '@angular/router';
 import { CommonModule } from '@angular/common';
 import { ListadoVentasComponent } from './listado-ventas/listado-ventas.component';
 import { DetallesVentaComponent } from './detalles-venta/detalles-venta.component';
-
+import {MatTableModule} from '@angular/material/table';
 
 
 const ventasRoutes: Routes = [
@@ -34,6 +34,7 @@ const ventasRoutes: Routes = [
     MatToolbarModule,
     MatIconModule,
     MatMenuModule,
+    MatTableModule,
     RouterModule.forRoot(ventasRoutes)
   ],
   exports:[

@@ -1,0 +1,18 @@
+
+<mat-card class="listado-productos-card" routerLink="/detalles-producto"  >
+
+  <img mat-card-image src="{{card.img}}" width="50" height="200">
+
+
+    <mat-card-title>{{card.name}}</mat-card-title>
+    <mat-card-subtitle>{{card.modelo}}</mat-card-subtitle>
+    <mat-card-subtitle>{{card.price}}</mat-card-subtitle>
+
+
+    <button mat-icon-button color="black" routerLink="/formulario-component">
+      <mat-icon>add_shopping_cart</mat-icon>
+    </button>
+
+
+</mat-card>
+

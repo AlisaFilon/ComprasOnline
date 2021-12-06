@@ -1,12 +1,27 @@
+
+.mat-toolbar {
+  background-color: white;
+  justify-content: space-between;
+  padding: 2rem;
+}
+h1 {
+font-size: 1.5rem;
+}
+.mat-icon {
+font-size: 2.5rem;
+}
+
+
+
+
+
 .listado-productos {
      background-color: #F1F5F9;
-     height: 100vh;
+
      display: flex;
      justify-content: center;
      align-items: center;
-
 }
-
 
 .material-icons {
     font-size: 3rem;
@@ -15,14 +30,9 @@
 }
 
 
-.listado-productos-card-tres {
-    flex-direction: row;
-    display: flex;
-}
-.listado-productos-card {
-      height: 25rem;
-      width: 20rem;
-      margin: 2rem;
-    }
+
+
+
+
 
 

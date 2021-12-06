@@ -1,70 +1,29 @@
+<div class="main-border">
+  <mat-toolbar>
+
+      <h1>Listado de Productos</h1>
+
+    <button mat-icon-button class="example-icon" routerLink="/home">
+      <h1>Atras</h1>
+    </button>
+
+    <button mat-icon-button color="warn" routerLink="/formulario-component">
+      <mat-icon>add_shopping_cart</mat-icon>
+    </button>
+  </mat-toolbar>
+</div>
+
 
 <div class="listado-productos">
-
-            <div class="material-icons-grid">
-             <span class="material-icons">apps</span>
-             <span class="material-icons">apps</span>
-           </div>
-
-  <div class="listado-productos-card-tres">
-      <mat-card class="listado-productos-card">
-
-        <img mat-card-image src="https://material.angular.io/assets/img/examples/shiba2.jpg">
-
-          <mat-card-header>
-                <mat-card-title>Secador Profecional</mat-card-title>
-                <mat-card-subtitle>Modelo:385 Fucsia</mat-card-subtitle>
-          </mat-card-header>
-
-          <mat-card-actions>
-            <button mat-button>$52</button>
-            <button mat-icon-button color="black">
-              <mat-icon>add_shopping_cart</mat-icon>
-            </button>
-          </mat-card-actions>
-
-      </mat-card>
-
-
-    <mat-card class="listado-productos-card">
-
-      <img mat-card-image src="https://material.angular.io/assets/img/examples/shiba2.jpg">
-
-      <mat-card-header>
-        <mat-card-title>Secador Profecional</mat-card-title>
-        <mat-card-subtitle>Modelo:385 Fucsia</mat-card-subtitle>
-      </mat-card-header>
-
-      <mat-card-actions>
-        <button mat-button>$52</button>
-        <button mat-icon-button color="black">
-          <mat-icon>add_shopping_cart</mat-icon>
-        </button>
-      </mat-card-actions>
-
-    </mat-card>
-
-
-
-    <mat-card class="listado-productos-card">
-
-      <img mat-card-image src="https://material.angular.io/assets/img/examples/shiba2.jpg">
-
-      <mat-card-header>
-        <mat-card-title>Secador Profecional</mat-card-title>
-        <mat-card-subtitle>Modelo:385 Fucsia</mat-card-subtitle>
-      </mat-card-header>
-
-      <mat-card-actions>
-        <button mat-button>$52</button>
-        <button mat-icon-button color="black">
-          <mat-icon>add_shopping_cart</mat-icon>
-        </button>
-      </mat-card-actions>
-
-    </mat-card>
-  </div>
-
-
-
+  <img  src="/assets/img/listtres.png" width="30" height="30">
+  <img  src="/assets/img/listquad.png" width="40" height="30">
 </div>
+
+
+
+
+<app-product-card *ngFor="let card of cards" [card]="card"> </app-product-card>
+
+
+
+
