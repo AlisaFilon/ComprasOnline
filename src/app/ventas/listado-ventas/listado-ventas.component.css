@@ -1,6 +1,6 @@
 
 .mat-toolbar {
-  background-color: white;
+  background-color: #6495ED;
   justify-content: space-between;
   padding: 2rem;
 }
@@ -11,11 +11,6 @@ font-size: 1.5rem;
 font-size: 2.5rem;
 }
 
-
-
-
-
-
 .tab {
 background-color: #F1F5F9;
   height: 100vh;
@@ -24,15 +19,11 @@ background-color: #F1F5F9;
   align-items: center;
 
 }
-.mat-toolbar {
-  background-color: white;
-  justify-content: space-between;
-  padding: 2rem;
 
-}
+
 table {
  height: 40rem;
- width: 60rem;
+ width: 75rem;
 
 }
 

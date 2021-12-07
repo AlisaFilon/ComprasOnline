@@ -1,7 +1,9 @@
+
+
 .listado-productos-card {
-      height: 25rem;
-      width: 20rem;
-      margin: 2rem;
+     height: 22rem;
+     width: 14rem;
+     margin: 1rem;
     }
 
     .material-icons {
@@ -15,7 +17,34 @@
     flex-direction: row;
     display: flex;
 }
+.mat-card {
+  color: #F1F5F9;
+  background-color: #F0F8FF;
+  margin-top: 8rem;
+  }
 
+.mat-card-image {
+    width: calc(100% + 32px);
+    margin: 0 -16px 16px -16px;
+    margin-top: 0px;
+}
 
-
-
+.mat-card-title {
+    font-size: 24px;
+    font-weight: 500;
+    margin-left: 1rem;
+    color: #605f5f;
+}
+.mat-card-subtitle, .mat-card-content{
+    font-size: 15px;
+    color: black;
+    font-weight: bold;
+    margin-left: 1rem;
+    margin-top: 5rem;
+}
+.material-icons {
+    font-size: 2rem;
+    margin-left: 11.2rem;
+    margin-top:  -6.5rem;
+    color: red;
+}

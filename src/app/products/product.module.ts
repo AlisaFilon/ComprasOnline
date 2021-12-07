@@ -13,6 +13,10 @@ import { ListadoProductosComponent } from './listado-productos/listado-productos
 import { DetallesProductoComponent } from './detalles-producto/detalles-producto.component';
 import { ProductCardComponent } from './product-card/product-card.component';
 
+/* import { FlexLayoutModule } from '@angular/flex-layout';
+import { FormsModule } from '@angular/forms'; */
+
+
 
 const productRoutes: Routes = [
 {path: 'detalles-producto', component: DetallesProductoComponent },
@@ -35,6 +39,8 @@ const productRoutes: Routes = [
       MatToolbarModule,
       MatIconModule,
       MatMenuModule,
+      /* FlexLayoutModule,
+      FormsModule, */
       RouterModule.forRoot(productRoutes)
   ],
   exports: [
