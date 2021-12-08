@@ -1,4 +1,4 @@
-<body xmlns="http://www.w3.org/1999/html" xmlns="http://www.w3.org/1999/html">
+<body>
   <mat-toolbar>
        <h1>Listado de Productos</h1>
 
@@ -13,27 +13,18 @@
         </div>
   </mat-toolbar>
 
-  <!--нет изображения на карточках -->
-<!--   <div class="listdo-products">
-        <ul class="list-group">
-          <li class="list-group-item" *ngFor="let card of [0]">
-            <app-product-card *ngFor="let card of [1,2,3,4,5]"> </app-product-card>
-          </li>
-          <img  src="/assets/img/listtres.png" width="30" height="30">
-          <img  src="/assets/img/listquad.png" width="40" height="30">
-
-        </ul>
-    </div>-->
-
-  <div class="listdo-products">
+  <div class="listado-products">
       <div class="listado-products-grid">
-          <img  src="/assets/img/listtres.png" width="30" height="30">
-          <img  src="/assets/img/listquad.png">
+        <img onclick="myFunction()" class="grid3" src="/assets/img/listtres.png" width="30" height="30">
+        <img class="grid4" src="/assets/img/listquad.png" width="40" height="30">
+
       </div>
 
 
-   <div class="listad-products-proba" >
-      <app-product-card *ngFor="let card of cards" [card]="card"> </app-product-card>
-   </div>
+       <div class="listado-cards">
+
+              <app-product-card class="qwerty" [card]="msv" *ngFor="let msv of cards" > </app-product-card>
+
+      </div>
   </div>
 </body>

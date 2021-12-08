@@ -20,7 +20,7 @@ export class DialogElementsExampleDialog {} */
 export interface PeriodicElement {
   ventas: string;
   descripcion: string;
-  fecha: string;
+  fecha: any;
 }
 
 const Ventas: PeriodicElement[] = [
@@ -34,7 +34,15 @@ const Ventas: PeriodicElement[] = [
   {ventas: 'VNT8', descripcion: 'DSC8', fecha: '08/01/2021'},
   {ventas: 'VNT9', descripcion: 'DSC9', fecha: '09/01/2021'},
   {ventas: 'VNT10',descripcion: 'DSC10', fecha: '10/01/2021'}
+
 ]
+
+function totalVentas(){
+return Ventas.length;
+};
+console.log (totalVentas());
+
+
 
 
 @Component({
