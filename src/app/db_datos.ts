@@ -1,4 +1,6 @@
-export interface Productos {
+import { Component, OnInit } from '@angular/core';
+
+ interface Productos {
   nombre: string;
   modelo: string;
   descripcion: string;
@@ -6,6 +8,13 @@ export interface Productos {
   precio:number;
   cantidad:number;
 
+@Component({
+  selector: 'app-db_datos.ts',
+  templateUrl: './listado-productos.component.html',
+  styleUrls: ['./listado-productos.component.css']
+})
+
+export class AppComponent implements OnInit {
 
 cards = [
 {img:'/assets/img/imgcards/1.png', nombre: 'NM1', modelo: 'MDL1', precio: '15$'},
@@ -15,7 +24,19 @@ cards = [
 {img:'/assets/img/imgcards/5.png', nombre: 'NM5', modelo: 'MDL5', precio: '8$'},
 {img:'/assets/img/imgcards/6.png', nombre: 'NM6', modelo: 'MDL6', precio: '35$'}
 ]
-}
+
+ constructor() {
+  }
+
+  ngOnInit(): void {
+  }
+
+ }
+
+
+
+
+
 
 export interface Ventas {
    nombre: string;
@@ -24,10 +45,9 @@ export interface Ventas {
    producto:string;
    cantidad:number;
    persona:string;
-
 }
 
-const ventas: Ventas[] = [
+const Ventas: Ventas[] = [
   {nombre: 'VNT1', descripcion: 'DSC1', fecha: '01/01/2021'},
   {nombre: 'VNT2', descripcion: 'DSC2', fecha: '02/01/2021'},
   {nombre: 'VNT3', descripcion: 'DSC3', fecha: '03/01/2021'},
@@ -39,3 +59,33 @@ const ventas: Ventas[] = [
   {nombre: 'VNT9', descripcion: 'DSC9', fecha: '09/01/2021'},
   {nombre: 'VNT10',descripcion: 'DSC10', fecha: '10/01/2021'}
 ]
+
+
+function totalVentas(){
+return Ventas.length;
+};
+console.log (totalVentas());
+
+
+
+
+@Component({
+  selector: 'app-db_datos.ts',
+  templateUrl: './listado-ventas.component.html',
+  styleUrls: ['./listado-ventas.component.css']
+})
+
+export class AppComponent implements OnInit {
+displayedColumns: string[] = ['ventas', 'descripcion', 'fecha'];
+  dataSource = Ventas;
+
+
+
+
+constructor() {
+  }
+
+  ngOnInit(): void {
+  }
+
+

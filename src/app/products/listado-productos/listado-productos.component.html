@@ -1,30 +1,35 @@
-<body>
-  <mat-toolbar>
-       <h1>Listado de Productos</h1>
 
+
+
+<div class="main-border">
+  <mat-toolbar>
         <button mat-icon-button class="example-icon" routerLink="/home">
           <h1>Atras</h1>
         </button>
 
+    <h1>Listado de Productos</h1>
         <div class="hteme">
           <button mat-icon-button color="warn" routerLink="/formulario">
             <mat-icon>add_shopping_cart</mat-icon>
           </button>
         </div>
   </mat-toolbar>
+</div>
 
+  <body>
   <div class="listado-products">
       <div class="listado-products-grid">
-        <img onclick="myFunction()" class="grid3" src="/assets/img/listtres.png" width="30" height="30">
-        <img class="grid4" src="/assets/img/listquad.png" width="40" height="30">
+
+
+
+        <button type="grid3"><img src="/assets/img/listtres.png" width="30" height="30"></button>
+        <button type="grid4"><img src="/assets/img/listquad.png" width="40" height="30"></button>
 
       </div>
 
 
        <div class="listado-cards">
-
-              <app-product-card class="qwerty" [card]="msv" *ngFor="let msv of cards" > </app-product-card>
-
-      </div>
+         <app-product-card class="qwerty" [card]="msv" *ngFor="let msv of cards" > </app-product-card>
+       </div>
   </div>
 </body>
