@@ -17,19 +17,18 @@
 </div>
 
   <body>
-  <div class="listado-products">
+  <div  class="listado-products">
       <div class="listado-products-grid">
-
-
-
-        <button type="grid3"><img src="/assets/img/listtres.png" width="30" height="30"></button>
-        <button type="grid4"><img src="/assets/img/listquad.png" width="40" height="30"></button>
-
+        <label for="grd" class="grid3"><img src="/assets/img/listtres.png" width="30" height="30"></label>
+        <label for="grd" class="grid4"><img src="/assets/img/listquad.png" width="40" height="30"></label>
       </div>
 
 
-       <div class="listado-cards">
+       <input type="checkbox" id="grd"/>
+  <div class="listado-cards">
          <app-product-card class="qwerty" [card]="msv" *ngFor="let msv of cards" > </app-product-card>
-       </div>
+
   </div>
+  </div>
+
 </body>

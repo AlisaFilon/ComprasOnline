@@ -28,13 +28,23 @@ font-size: 2.5rem;
 
 }
 
+#grd{
+display:none;
+}
 
 .listado-cards {
 margin-left: 20rem;
 height: 100%;
-width: 1100px;
+width: 1300px;
 margin-top: -6rem;
 }
+
+ input:checked + .listado-cards {
+     margin-left: 20rem;
+        height: 100%;
+        width: 1100px;
+        margin-top: -6rem;
+        }
 
 .listado-products-grid {
 margin-top: 1rem;

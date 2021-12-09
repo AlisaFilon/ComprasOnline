@@ -18,7 +18,7 @@ export const cards = [
   {img:'/assets/img/imgcards/6.png', nombre: 'NM6', modelo: 'MDL6', precio: '35$'}
 ];
 
-export interface Ventas {
+ interface Tabla {
    nombre: string;
    fecha:string;
    descripcion: string;
@@ -27,7 +27,7 @@ export interface Ventas {
    //persona:string;
 }
 
-const Ventas: Ventas[] = [
+export const Ventas: Tabla[] = [
   {nombre: 'VNT1', descripcion: 'DSC1', fecha: '01/01/2021'},
   {nombre: 'VNT2', descripcion: 'DSC2', fecha: '02/01/2021'},
   {nombre: 'VNT3', descripcion: 'DSC3', fecha: '03/01/2021'},
@@ -40,6 +40,9 @@ const Ventas: Ventas[] = [
   {nombre: 'VNT10',descripcion: 'DSC10', fecha: '10/01/2021'}
 ]
 
+
+/*
 function totalVentas(){
-  return Ventas.length;
+return Ventas.length;
 };
+console.log (totalVentas()); */
