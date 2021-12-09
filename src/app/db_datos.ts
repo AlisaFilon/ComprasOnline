@@ -7,44 +7,24 @@ import { Component, OnInit } from '@angular/core';
   caracteristicas:any;
   precio:number;
   cantidad:number;
-
-@Component({
-  selector: 'app-db_datos.ts',
-  templateUrl: './listado-productos.component.html',
-  styleUrls: ['./listado-productos.component.css']
-})
-
-export class AppComponent implements OnInit {
-
-cards = [
-{img:'/assets/img/imgcards/1.png', nombre: 'NM1', modelo: 'MDL1', precio: '15$'},
-{img:'/assets/img/imgcards/2.png', nombre: 'NM2', modelo: 'MDL2', precio: '20$'},
-{img:'/assets/img/imgcards/3.png', nombre: 'NM3', modelo: 'MDL3', precio: '25$'},
-{img:'/assets/img/imgcards/4.png', nombre: 'NM4', modelo: 'MDL4', precio: '10$'},
-{img:'/assets/img/imgcards/5.png', nombre: 'NM5', modelo: 'MDL5', precio: '8$'},
-{img:'/assets/img/imgcards/6.png', nombre: 'NM6', modelo: 'MDL6', precio: '35$'}
-]
-
- constructor() {
   }
 
-  ngOnInit(): void {
-  }
-
- }
-
-
-
-
-
+export const cards = [
+  {img:'/assets/img/imgcards/1.png', nombre: 'NM1', modelo: 'MDL1', precio: '15$'},
+  {img:'/assets/img/imgcards/2.png', nombre: 'NM2', modelo: 'MDL2', precio: '20$'},
+  {img:'/assets/img/imgcards/3.png', nombre: 'NM3', modelo: 'MDL3', precio: '25$'},
+  {img:'/assets/img/imgcards/4.png', nombre: 'NM4', modelo: 'MDL4', precio: '10$'},
+  {img:'/assets/img/imgcards/5.png', nombre: 'NM5', modelo: 'MDL5', precio: '8$'},
+  {img:'/assets/img/imgcards/6.png', nombre: 'NM6', modelo: 'MDL6', precio: '35$'}
+];
 
 export interface Ventas {
    nombre: string;
    fecha:string;
    descripcion: string;
-   producto:string;
-   cantidad:number;
-   persona:string;
+   //producto:string;
+   //cantidad:number;
+   //persona:string;
 }
 
 const Ventas: Ventas[] = [
@@ -60,32 +40,6 @@ const Ventas: Ventas[] = [
   {nombre: 'VNT10',descripcion: 'DSC10', fecha: '10/01/2021'}
 ]
 
-
 function totalVentas(){
-return Ventas.length;
+  return Ventas.length;
 };
-console.log (totalVentas());
-
-
-
-
-@Component({
-  selector: 'app-db_datos.ts',
-  templateUrl: './listado-ventas.component.html',
-  styleUrls: ['./listado-ventas.component.css']
-})
-
-export class AppComponent implements OnInit {
-displayedColumns: string[] = ['ventas', 'descripcion', 'fecha'];
-  dataSource = Ventas;
-
-
-
-
-constructor() {
-  }
-
-  ngOnInit(): void {
-  }
-
-
