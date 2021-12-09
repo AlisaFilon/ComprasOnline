@@ -1,5 +1,5 @@
 .mat-toolbar {
-  background-color: white;
+  background-color: #6495ED;
   justify-content: space-between;
   padding: 2rem;
 }
@@ -11,6 +11,7 @@ h1 {
 }
 
 .home {
+background-image: url(/assets/img/led.png);
    background-color: #F1F5F9;
    height: 100vh;
    display: flex;

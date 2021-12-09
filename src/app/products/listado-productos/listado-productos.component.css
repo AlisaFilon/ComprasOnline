@@ -4,7 +4,7 @@
 }*/
 
 .mat-toolbar {
-  background-color: white;
+  background-color: #6495ED;
   justify-content: space-between;
   padding: 2rem;
 }
@@ -19,8 +19,8 @@ font-size: 2.5rem;
 
 
 .listado-products {
-  background-color: #F1F5F9;
 
+  background-image: url(/assets/img/led.png);
   display: flex;
   justify-content: center;
   display: flex;

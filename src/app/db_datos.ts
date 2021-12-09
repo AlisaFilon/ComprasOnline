@@ -10,12 +10,12 @@ import { Component, OnInit } from '@angular/core';
   }
 
 export const cards = [
-  {img:'/assets/img/imgcards/1.png', nombre: 'NM1', modelo: 'MDL1', precio: '15$'},
-  {img:'/assets/img/imgcards/2.png', nombre: 'NM2', modelo: 'MDL2', precio: '20$'},
-  {img:'/assets/img/imgcards/3.png', nombre: 'NM3', modelo: 'MDL3', precio: '25$'},
-  {img:'/assets/img/imgcards/4.png', nombre: 'NM4', modelo: 'MDL4', precio: '10$'},
-  {img:'/assets/img/imgcards/5.png', nombre: 'NM5', modelo: 'MDL5', precio: '8$'},
-  {img:'/assets/img/imgcards/6.png', nombre: 'NM6', modelo: 'MDL6', precio: '35$'}
+  {img:'/assets/img/imgcards/1.png', nombre: 'Secadores de pelo', modelo: 'MDL1', precio: '15$'},
+  {img:'/assets/img/imgcards/2.png', nombre: 'Cepillo electrico', modelo: 'MDL2', precio: '20$'},
+  {img:'/assets/img/imgcards/3.png', nombre: 'Plancha', modelo: 'MDL3', precio: '25$'},
+  {img:'/assets/img/imgcards/4.png', nombre: 'Campana secador', modelo: 'MDL4', precio: '10$'},
+  {img:'/assets/img/imgcards/5.png', nombre: 'Secadores de pelo', modelo: 'MDL5', precio: '8$'},
+  {img:'/assets/img/imgcards/6.png', nombre: 'Plancha', modelo: 'MDL6', precio: '35$'}
 ];
 
  interface Tabla {
