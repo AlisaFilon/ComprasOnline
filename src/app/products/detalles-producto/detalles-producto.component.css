@@ -18,7 +18,7 @@ h1 {
 
 
 .card-principal {
-  background-color: #F1F5F9;
+  background-image: url(/assets/img/led.png);
   height: 100vh;
   display: flex;
   justify-content: center;

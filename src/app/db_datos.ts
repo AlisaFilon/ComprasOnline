@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 
- interface Productos {
+ export interface Productos {
   nombre: string;
   modelo: string;
   descripcion: string;
@@ -9,7 +9,7 @@ import { Component, OnInit } from '@angular/core';
   cantidad:number;
   }
 
-export const cards = [
+export const cards  = [
   {img:'/assets/img/imgcards/1.png', nombre: 'Secadores de pelo', modelo: 'MDL1', precio: '15$'},
   {img:'/assets/img/imgcards/2.png', nombre: 'Cepillo electrico', modelo: 'MDL2', precio: '20$'},
   {img:'/assets/img/imgcards/3.png', nombre: 'Plancha', modelo: 'MDL3', precio: '25$'},
@@ -46,3 +46,22 @@ function totalVentas(){
 return Ventas.length;
 };
 console.log (totalVentas()); */
+
+interface Detalles {
+  nombre: string;
+  precio:number;
+  modelo: any;
+  caracteristicas: any;
+
+  }
+
+export const det = [
+  { nombre: 'Secadores de pelo', precio: '15', modelo: 'MDL1', caracteristicas: 'Potente secador de cabello de 2200 vatios' },
+  { nombre: 'Cepillo electrico', precio: '20', modelo: 'MDL2', caracteristicas: 'Potente secador de cabello de 2200 vatios' },
+  { nombre: 'Plancha', precio: '25', modelo: 'MDL3', caracteristicas: 'Potente secador de cabello de 2200 vatios' },
+  { nombre: 'Campana secador', precio: '30', modelo: 'MDL4', caracteristicas: 'Potente secador de cabello de 2200 vatios' },
+  { nombre: 'Secadores de pelo', precio: '35', modelo: 'MDL5', caracteristicas: 'Potente secador de cabello de 2200 vatios' },
+  { nombre: 'Plancha', precio: '33', modelo: 'MDL6', caracteristicas: 'Potente secador de cabello de 2200 vatios' }
+];
+
+ //var detToUp = String.prototype.toUpperCase.apply(det.nombre);

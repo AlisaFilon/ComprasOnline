@@ -1,4 +1,6 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, Input } from '@angular/core';
+import { det } from "../../db_datos";
+
 
 @Component({
   selector: 'app-detalles-producto',
@@ -6,6 +8,9 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./detalles-producto.component.css']
 })
 export class DetallesProductoComponent implements OnInit {
+
+
+@Input() det:any;
 
   constructor() { }
 
