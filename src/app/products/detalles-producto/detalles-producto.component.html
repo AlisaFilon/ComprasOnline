@@ -1,37 +1,21 @@
 <body>
 <mat-toolbar>
-  <button mat-icon-button class="example-icon" routerLink="/home">
+  <button mat-icon-button class="example-icon" routerLink="/listado-productos">
     <h1>Atras</h1>
   </button>
-    <h1>Producto: Secador Profesional</h1>
+  <h1>Producto: Secador Profesional</h1>
 
   <div class="hteme">
-              <button mat-icon-button color="white" routerLink="/formulario">
-                <mat-icon>add_shopping_cart</mat-icon>
-              </button>
+    <button mat-icon-button color="white" routerLink="/formulario">
+      <mat-icon>add_shopping_cart</mat-icon>
+    </button>
   </div>
 
 </mat-toolbar>
 
 <div class="card-principal">
-  <mat-card class="detalles-producto">
-    <img mat-card-image src="https://material.angular.io/assets/img/examples/shiba2.jpg">
-    <mat-card-content>
 
-            <mat-card-header>
-                <mat-card-title>{{det.nombre}}</mat-card-title>
-              <mat-card-subtitle>{{det.precio}}</mat-card-subtitle>
-                <mat-card-subtitle>{{det.modelo}}</mat-card-subtitle>
-                <mat-card-subtitle>{{det.caracteristicas}}</mat-card-subtitle>
-            </mat-card-header>
-                <div class="smallTheme">
-                          <button mat-icon-button  color="warn" routerLink="/formulario">
-                              <mat-icon>add_shopping_cart</mat-icon>
-                          </button>
-                </div>
 
-    </mat-card-content>
-
-  </mat-card>
+  <app-detalles-card  [det]="msv" *ngFor="let msv of dets"listado-productos > </app-detalles-card>
 </div>
 </body>

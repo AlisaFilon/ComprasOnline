@@ -1,5 +1,5 @@
 import { Component, OnInit, Input } from '@angular/core';
-import { det } from "../../db_datos";
+import { dets } from "../../db_datos";
 
 
 @Component({
@@ -8,13 +8,9 @@ import { det } from "../../db_datos";
   styleUrls: ['./detalles-producto.component.css']
 })
 export class DetallesProductoComponent implements OnInit {
+   dets = dets
 
-
-@Input() det:any;
-
-  constructor() { }
-
-  ngOnInit(): void {
-  }
-
+ constructor() { }
+ngOnInit(): void {
+}
 }

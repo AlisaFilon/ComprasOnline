@@ -8,16 +8,28 @@ import {cards } from "../../db_datos";
   styleUrls: ['./listado-productos.component.css']
 })
 export class ListadoProductosComponent implements OnInit {
-  cards = cards
+
+ cards = cards
 
 
 
 
-  constructor() {
-  }
+  constructor() { }
 
+ col:any;
   ngOnInit(): void {
-  }
+  this.col="3"
+}
+
+tresSelect(){
+this.col="3";
+}
+
+
+cuatroSelect(){
+this.col="4";
+}
+
 
 }
 

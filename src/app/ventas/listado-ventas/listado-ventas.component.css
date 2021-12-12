@@ -12,8 +12,7 @@ font-size: 2.5rem;
 }
 
 .tab {
-background-image: url(/assets/img/led.png);
-
+  background-image: url(/assets/img/led.png);
   height: 100vh;
   display: flex;
   justify-content: center;

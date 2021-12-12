@@ -12,7 +12,8 @@ import { CommonModule } from '@angular/common';
 import { ListadoProductosComponent } from './listado-productos/listado-productos.component';
 import { DetallesProductoComponent } from './detalles-producto/detalles-producto.component';
 import { ProductCardComponent } from './product-card/product-card.component';
-
+import { DetallesCardComponent } from './detalles-card/detalles-card.component';
+import {MatGridListModule} from '@angular/material/grid-list';
 /* import { FlexLayoutModule } from '@angular/flex-layout';
 import { FormsModule } from '@angular/forms'; */
 
@@ -28,7 +29,8 @@ const productRoutes: Routes = [
   declarations: [
   DetallesProductoComponent,
   ListadoProductosComponent,
-  ProductCardComponent
+  ProductCardComponent,
+  DetallesCardComponent
   ],
   imports: [
       CommonModule,
@@ -39,6 +41,7 @@ const productRoutes: Routes = [
       MatToolbarModule,
       MatIconModule,
       MatMenuModule,
+      MatGridListModule,
       /* FlexLayoutModule,
       FormsModule, */
       RouterModule.forRoot(productRoutes)
