@@ -1,50 +1,40 @@
-
-
-.listado-productos-card {
-     height: 22rem;
-     width: 14rem;
-     margin: 1rem;
-    }
-
-    .material-icons {
+ @import url('https://fonts.googleapis.com/css2?family=IM+Fell+French+Canon+SC&family=Kanit:wght@300&display=swap');
+ .material-icons {
         font-size: 3rem;
-        margin-left: 1.2rem;
+        margin-left: 15rem;
         margin-top: 1.2rem;
     }
 
-
-.listado-productos-card-tres {
-    flex-direction: row;
-    display: flex;
-}
 .mat-card {
-  color: #F1F5F9;
-  background-color: #F0F8FF;
-  margin-top: 8rem;
+  height: 24rem;
+  width: 18rem;
+  color: #E2F0FF;
+  background-color: #f2fbb5c9;
+  margin-top: 0rem;
+/*  box-shadow: 0 0 10px 5px #9DCDFF;
+  border: 1px solid #6495ED;*/
+  font-family: 'Kanit';
   }
 
-.mat-card-image {
-    width: calc(100% + 32px);
-    margin: 0 -16px 16px -16px;
-    margin-top: 0px;
-}
+
 
 .mat-card-title {
     font-size: 24px;
     font-weight: 500;
     margin-left: 1rem;
-    color: #605f5f;
+    color: #212121;
 }
 .mat-card-subtitle, .mat-card-content{
     font-size: 15px;
     color: black;
     font-weight: bold;
-    margin-left: 1rem;
-    margin-top: 5rem;
+    margin-left: 0rem;
+    margin-top: 6.5rem;
 }
+
 .material-icons {
     font-size: 2rem;
-    margin-left: 11.2rem;
+    margin-left: 16rem;
     margin-top:  -6.5rem;
     color: red;
 }

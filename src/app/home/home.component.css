@@ -5,13 +5,15 @@
 }
 h1 {
   font-size: 1.5rem;
+  font-family: 'Kanit';
 }
 .mat-icon {
   font-size: 2.5rem;
+  color: red;
 }
 
 .home {
-background-image: url(/assets/img/led.png);
+  background-image: url(/assets/img/ledd.jpg);
    background-color: #F1F5F9;
    height: 100vh;
    display: flex;
@@ -20,6 +22,7 @@ background-image: url(/assets/img/led.png);
 }
 
 .card-home-principal {
+  font-family: 'Kanit';
   height: 15rem;
   width: 34rem;
   margin: 2rem;

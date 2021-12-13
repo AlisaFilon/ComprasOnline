@@ -1,7 +1,4 @@
-/*html, body {
-    max-width: 100%;
-    overflow-x: hidden;
-}*/
+
 
 .mat-toolbar {
   background-color: #6495ED;
@@ -11,27 +8,19 @@
 
 h1 {
 font-size: 1.5rem;
+font-family: 'Kanit';
 }
 
 .mat-icon {
 font-size: 2.5rem;
+color: red;
 }
-
-
 
 .listado-products {
-  background-image: url(/assets/img/led.png);
+ background-image: url(/assets/img/ledd.jpg);
   display: flex;
   justify-content: center;
-  display: flex;
   flex-flow: column wrap;
-}
-
-.listado-cards {
-  margin-left: 5rem;
-  height: 100%;
-
-
 }
 
 .listado-products-grid {
@@ -47,8 +36,13 @@ font-size: 2.5rem;
   margin-left: 1rem;
   width: 3rem;
   height: 3rem;
-}
 
+}.mat-grid-list {
+     display: block;
+     position: relative;
+     width: 85rem;
+     margin-left: 17rem;
+ }
 
 
 

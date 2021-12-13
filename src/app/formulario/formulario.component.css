@@ -4,20 +4,22 @@
   padding: 2rem;
 }
 h1 {
-font-size: 1.5rem;
+ font-size: 1.5rem;
+ font-family: 'Kanit';
 }
-.mat-icon {
-font-size: 2.5rem;
+ .mat-icon {
+ font-size: 2.5rem;
 }
 
 .form {
- background-image: url(/assets/img/led.png);
+  background-image: url(/assets/img/ledd.jpg);
   height: 100vh;
   display: flex;
   justify-content: center;
   align-items: center;
   }
-.example-form {
+
+.container-form {
   min-width: 70rem;
   max-width: 40rem;
   padding: 2rem;
@@ -31,13 +33,14 @@ font-size: 2.5rem;
   width: 100%;
 }
 
-.example-full-width2 {
-  width: 50%;
-}
 td {
   padding-right: 8px;
 }
+mat-label {
+ font-family: 'Kanit';
+}
 button {
+  font-family: 'Kanit';
   margin-left: 54rem;
   width: 15rem;
 }
