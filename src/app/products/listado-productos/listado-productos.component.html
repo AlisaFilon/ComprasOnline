@@ -1,5 +1,4 @@
-<div class="main-border">
-  <mat-toolbar>
+<mat-toolbar>
         <button mat-icon-button class="example-icon" routerLink="/home">
           <h1>Atras</h1>
         </button>
@@ -10,24 +9,24 @@
             <mat-icon>add_shopping_cart</mat-icon>
           </button>
         </div>
-  </mat-toolbar>
-</div>
+</mat-toolbar>
 
 
-  <div  class="listado-products">
-      <div class="listado-products-grid">
-        <label class="grid3"><img src="/assets/img/listtres.png" width="30" height="30" (click)="tresSelect()" ></label>
-        <label class="grid4"><img src="/assets/img/listquad.png" width="40" height="30"(click)="cuatroSelect()"></label>
+
+    <div  class="listado-products">
+        <div class="listado-products-grid">
+          <label class="grid3"><img src="/assets/img/listtres.png" width="30" height="30" (click)="tresSelect()" ></label>
+          <label class="grid4"><img src="/assets/img/listquad.png" width="40" height="30"(click)="cuatroSelect()"></label>
+        </div>
+
+
+      <!--<input type="checkbox" id="grd"/>-->
+      <div class="listado-cards">
+        <mat-grid-list cols="{{col}}" rowHeight="500px">
+          <mat-grid-tile  *ngFor="let product of products">
+          <app-product-card  [product]="product"> </app-product-card>
+          </mat-grid-tile>
+        </mat-grid-list>
       </div>
-
-
-   <!--    <input type="checkbox" id="grd"/>-->
-    <div class="listado-cards">
-      <mat-grid-list cols="{{col}}" rowHeight="500px">
-        <mat-grid-tile  *ngFor="let msv of cards">
-        <app-product-card  [card]="msv"></app-product-card>
-        </mat-grid-tile>
-      </mat-grid-list>
     </div>
-  </div>
 

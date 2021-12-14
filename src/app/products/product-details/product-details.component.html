@@ -1,0 +1,38 @@
+<mat-toolbar>
+  <button mat-icon-button class="example-icon" routerLink="/listado-productos">
+    <h1>Atras</h1>
+  </button>
+
+
+  <div class="hteme">
+    <button mat-icon-button color="white" routerLink="/formulario">
+      <mat-icon>add_shopping_cart</mat-icon>
+    </button>
+  </div>
+</mat-toolbar>
+
+
+<div class="card-principal">
+
+  <div class="detalles-producto">
+
+
+    <div class="mat-card-content">
+      <div *ngIf="product">
+        <img class="mat-card-image" src="{{product.img}}" width="200" height="400">
+        <mat-card-title>{{product.nombre  | uppercase}}</mat-card-title>
+        <mat-card-title>{{product.precio}}</mat-card-title>
+        <mat-card-subtitle>{{product.modelo}}</mat-card-subtitle>
+        <mat-card-subtitle>{{product.caracteristicas}}</mat-card-subtitle>
+      </div>
+
+      <div class="smallTheme">
+        <button mat-icon-button  color="warn" routerLink="/formulario">
+          <mat-icon>add_shopping_cart</mat-icon>
+        </button>
+      </div>
+
+    </div>
+  </div>
+  <!--  <app-detalles-card > </app-detalles-card>-->
+</div>

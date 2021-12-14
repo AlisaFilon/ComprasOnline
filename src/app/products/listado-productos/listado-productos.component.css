@@ -1,5 +1,3 @@
-
-
 .mat-toolbar {
   background-color: #6495ED;
   justify-content: space-between;
@@ -43,6 +41,8 @@ color: red;
      width: 85rem;
      margin-left: 17rem;
  }
-
+.mat-card-image {
+height: 22rem;
+}
 
 

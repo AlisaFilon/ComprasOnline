@@ -1,20 +1,23 @@
 import { Component, OnInit } from '@angular/core';
 
  export interface Productos {
-  img:any;
+ id:number;
+  img: any;
   nombre: string;
   modelo: string;
   precio: number;
+  caracteristicas: any;
   }
 
-export const cards: Productos[]  = [
-  {img:'/assets/img/imgcards/1.png', nombre: 'Secadores de pelo', modelo: 'MDL1', precio: 15},
-  {img:'/assets/img/imgcards/2.png', nombre: 'Cepillo electrico', modelo: 'MDL2', precio: 20},
-  {img:'/assets/img/imgcards/3.png', nombre: 'Plancha', modelo: 'MDL3', precio: 25},
-  {img:'/assets/img/imgcards/4.png', nombre: 'Campana secador', modelo: 'MDL4', precio: 10},
-  {img:'/assets/img/imgcards/5.png', nombre: 'Secadores de pelo', modelo: 'MDL5', precio: 8},
-  {img:'/assets/img/imgcards/6.png', nombre: 'Plancha', modelo: 'MDL6', precio: 35}
+export const products: Productos[]  = [
+  {id:1, img:'/assets/img/imgcards/1.png', nombre: 'Secadores de pelo', modelo: 'MDL1', precio: 15, caracteristicas: 'Potente secador de cabello de 2200 vatios'},
+  {id:2, img:'/assets/img/imgcards/2.png', nombre: 'Cepillo electrico', modelo: 'MDL2', precio: 20, caracteristicas: 'Potente secador de cabello de 2200 vatios'},
+  {id:3, img:'/assets/img/imgcards/3.png', nombre: 'Plancha', modelo: 'MDL3', precio: 25, caracteristicas: 'Potente secador de cabello de 2200 vatios'},
+  {id:4, img:'/assets/img/imgcards/4.png', nombre: 'Campana secador', modelo: 'MDL4', precio: 10, caracteristicas: 'Potente secador de cabello de 2200 vatios'},
+  {id:5, img:'/assets/img/imgcards/5.png', nombre: 'Secadores de pelo', modelo: 'MDL5', precio: 8, caracteristicas: 'Potente secador de cabello de 2200 vatios'},
+  {id:6, img:'/assets/img/imgcards/6.png', nombre: 'Plancha', modelo: 'MDL6', precio: 35, caracteristicas: 'Potente secador de cabello de 2200 vatios'}
 ]
+
 
  interface Tabla {
    nombre: string;
@@ -45,7 +48,9 @@ return Ventas.length;
 };
 console.log (totalVentas()); */
 
-interface Detalles {
+
+
+/* interface Detalles {
   img:any;
   nombre: string;
   precio:number;
@@ -61,6 +66,6 @@ export const dets: Detalles[] = [
   { img:'/assets/img/imgcards/4.png', nombre: 'Campana secador', precio: 30, modelo: 'MDL4', caracteristicas: 'Potente secador de cabello de 2200 vatios' },
   { img:'/assets/img/imgcards/5.png', nombre: 'Secadores de pelo', precio: 35, modelo: 'MDL5', caracteristicas: 'Potente secador de cabello de 2200 vatios' },
   { img:'/assets/img/imgcards/6.png', nombre: 'Plancha', precio: 33, modelo: 'MDL6', caracteristicas: 'Potente secador de cabello de 2200 vatios' }
-]
+] */
 
 

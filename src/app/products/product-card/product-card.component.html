@@ -1,11 +1,15 @@
-            <mat-card class="listado-productos-card" routerLink="/detalles-producto" >
-              <img mat-card-image src="{{card.img}}" width="50" height="200">
+            <mat-card class="listado-productos-card" >
+              <img mat-card-image src="{{product.img}}" width="50" height="200">
 
-              <mat-card-title>{{card.nombre | uppercase}}</mat-card-title>
+              <a [title]="product.nombre + ' details'"
+                [routerLink]="['/products', product.id]">
+              <mat-card-title>{{product.nombre | uppercase}}</mat-card-title>
+              </a>
 
-              <mat-card-title>Modelo: {{card.modelo}}</mat-card-title>
+
+              <mat-card-title>Modelo: {{product.modelo}}</mat-card-title>
               <div class="price">
-                <mat-card-subtitle>{{card.precio | currency: "€"}}</mat-card-subtitle>
+                <mat-card-subtitle>{{product.precio | currency: "€"}}</mat-card-subtitle>
                 <button mat-icon-button color="black" routerLink="/formulario">
                   <mat-icon>add_shopping_cart</mat-icon>
                 </button>

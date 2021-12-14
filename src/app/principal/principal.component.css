@@ -10,13 +10,14 @@
 }
 h1 {
 font-size: 1.5rem;
+ font-family: 'Kanit';
 }
 .mat-icon {
 font-size: 2.5rem;
 }
 
 .card-principal {
-background-image: url(/assets/img/led.png);
+  background-image: url(/assets/img/ledd.jpg);
   background-color: #F1F5F9;
   height: 100vh;
   display: flex;
@@ -38,12 +39,19 @@ background-image: url(/assets/img/led.png);
     display: flex;
     justify-content: center;
     align-items: center;
-}
 
+}
+h2 {
+font-size: 2rem;
+font-family: 'Kanit';
+
+}
 h4 {
     display: flex;
     justify-content: center;
     margin: 10rem;
+    font-size: 1rem;
+    font-family: 'Kanit';
 }
 .mat-card-actions  {
     display: flex;
@@ -51,6 +59,7 @@ h4 {
     margin: -8rem;
 }
 button {
-width: 15rem;
-letter-spacing: 1rem;
+ width: 15rem;
+ letter-spacing: 1rem;
+ font-family: 'Kanit';
 }

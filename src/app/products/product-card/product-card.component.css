@@ -1,9 +1,9 @@
  @import url('https://fonts.googleapis.com/css2?family=IM+Fell+French+Canon+SC&family=Kanit:wght@300&display=swap');
- .material-icons {
+/* .material-icons {
         font-size: 3rem;
         margin-left: 15rem;
         margin-top: 1.2rem;
-    }
+    }*/
 
 .mat-card {
   height: 24rem;
@@ -28,13 +28,16 @@
     font-size: 15px;
     color: black;
     font-weight: bold;
-    margin-left: 0rem;
-    margin-top: 6.5rem;
+    margin-left: 1rem;
+    margin-top: 1.5rem;
 }
 
 .material-icons {
     font-size: 2rem;
-    margin-left: 16rem;
-    margin-top:  -6.5rem;
+    margin-left: 15rem;
+    margin-top:  -6rem;
     color: red;
+}
+.mat-card-image {
+  height: 18rem;
 }

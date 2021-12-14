@@ -8,7 +8,7 @@ import { Component, OnInit, Input } from '@angular/core';
 })
 export class ProductCardComponent implements OnInit {
 
-@Input() card:any;
+@Input() product:any;
 
 
   constructor (){ }

@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import {cards } from "../../db_datos";
+import { products } from "../../db_datos";
 
 
 @Component({
@@ -9,7 +9,8 @@ import {cards } from "../../db_datos";
 })
 export class ListadoProductosComponent implements OnInit {
 
- cards = cards
+
+ products = products
 
 
 
@@ -32,6 +33,7 @@ this.col="4";
 
 
 }
+
 
 
 
