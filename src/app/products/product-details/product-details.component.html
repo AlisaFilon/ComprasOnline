@@ -14,25 +14,26 @@
 
 <div class="card-principal">
 
-  <div class="detalles-producto">
-
-
-    <div class="mat-card-content">
-      <div *ngIf="product">
-        <img class="mat-card-image" src="{{product.img}}" width="200" height="400">
-        <mat-card-title>{{product.nombre  | uppercase}}</mat-card-title>
-        <mat-card-title>{{product.precio}}</mat-card-title>
-        <mat-card-subtitle>{{product.modelo}}</mat-card-subtitle>
-        <mat-card-subtitle>{{product.caracteristicas}}</mat-card-subtitle>
+  <div class="mat-card-content">
+    <div *ngIf="product">
+      <div class="img">
+        <img mat-card-image src="{{product.img}}" width="400" height="300">
       </div>
-
-      <div class="smallTheme">
-        <button mat-icon-button  color="warn" routerLink="/formulario">
-          <mat-icon>add_shopping_cart</mat-icon>
-        </button>
+      <div class="detalles">
+        <div class="title">
+          <mat-card-title>{{product.nombre  | uppercase}}</mat-card-title>
+          <mat-card-title>{{product.precio | currency: "€"}}</mat-card-title>
+        </div>
+        <div class="subtitle">
+          <mat-card-subtitle>{{product.modelo}}</mat-card-subtitle>
+          <mat-card-subtitle>{{product.caracteristicas}}</mat-card-subtitle>
+        </div>
+        <div class="smallTheme">
+          <button mat-icon-button  color="warn" routerLink="/formulario">
+            <mat-icon>add_shopping_cart</mat-icon>
+          </button>
+        </div>
       </div>
-
     </div>
   </div>
-  <!--  <app-detalles-card > </app-detalles-card>-->
 </div>

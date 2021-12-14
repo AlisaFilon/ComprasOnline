@@ -23,41 +23,29 @@ color: red;
     align-items: center;
 }
 
-.detalles-producto {
-  font-family: 'Kanit';
+
+.mat-card-content {
+ font-family: 'Kanit';
   background-color: #f2fbb5c9;
-  height: 25rem;
-  width: 50rem;
-  display: flex;
-  flex-direction: row;
+
 }
 
-.mat-card-image {
-  height: 25rem;
-  width: 25rem;
+.title {
+  display: flex;
+  margin-top: 2rem;
+  justify-content: space-around;
 }
-.mat-card-title {
-    flex-direction: row;
-    display: flex;
-    margin-top: 2rem;
-    margin-left: 2rem;
-}
-.mat-card-subtitle {
+.subtitle {
    display: flex;
    margin-top: 1rem;
    margin-left: 2rem;
+   font-size: 1.7rem;
+   flex-direction: column;
 }
-
-.mat-card-content {
-
+.smallTheme {
+   margin-left: 21rem;
+   margin-top: 1rem;
 }
-.mat-card-header .mat-card-subtitle {
-    margin-top: -8px;
-    font-size: 1.5rem;
-    font-size: 20px;
-    color: #212121;
-}
-.mat-icon-button i, .mat-icon-button .mat-icon {
-      line-height: 24px;
-      margin-top: 2rem;
+.img {
+height: 20rem;
 }

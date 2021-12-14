@@ -13,6 +13,7 @@ import { ListadoVentasComponent } from './listado-ventas/listado-ventas.componen
 import { DetallesVentaComponent } from './detalles-venta/detalles-venta.component';
 import {MatTableModule} from '@angular/material/table';
 import {MatDialogModule} from '@angular/material/dialog';
+import {DialogExampleComponent} from './listado-ventas/dialog-example.component';
 
 
 const ventasRoutes: Routes = [
@@ -24,6 +25,7 @@ const ventasRoutes: Routes = [
   declarations: [
     DetallesVentaComponent,
     ListadoVentasComponent,
+    DialogExampleComponent
   ],
 
   imports: [
@@ -39,8 +41,10 @@ const ventasRoutes: Routes = [
     MatDialogModule,
     RouterModule.forRoot(ventasRoutes)
   ],
+  entryComponents: [DialogExampleComponent],
+
   exports:[
-  DetallesVentaComponent,
+  DialogExampleComponent,
   ListadoVentasComponent
   ],
 
