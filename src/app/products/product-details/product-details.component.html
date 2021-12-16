@@ -17,14 +17,14 @@
   <div class="mat-card-content">
     <div *ngIf="product">
       <div class="img">
-        <img mat-card-image src="{{product.img}}" width="400" height="300">
+        <img mat-card-image src="{{product.img}}">
       </div>
       <div class="detalles">
-        <div class="title">
+        <div class="detalles-title">
           <mat-card-title>{{product.nombre  | uppercase}}</mat-card-title>
           <mat-card-title>{{product.precio | currency: "€"}}</mat-card-title>
         </div>
-        <div class="subtitle">
+        <div class="detalles-subtitle">
           <mat-card-subtitle>{{product.modelo}}</mat-card-subtitle>
           <mat-card-subtitle>{{product.caracteristicas}}</mat-card-subtitle>
         </div>

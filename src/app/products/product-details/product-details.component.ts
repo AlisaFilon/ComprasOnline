@@ -10,7 +10,7 @@ import { Productos, products } from "../../db_datos";
 })
 export class ProductDetailsComponent implements OnInit {
  products = products
-product: Productos | undefined;
+ product: Productos | undefined;
 
 
   constructor(private route: ActivatedRoute) { }

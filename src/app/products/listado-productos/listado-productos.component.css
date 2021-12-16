@@ -21,28 +21,25 @@ color: red;
   flex-flow: column wrap;
 }
 
+
 .listado-products-grid {
   margin-top: 1rem;
   margin-left: 2rem;
 }
 
-.grid3 {
-  width: 3rem;
-  height: 3rem;
-}
+
 .grid4 {
   margin-left: 1rem;
   width: 3rem;
   height: 3rem;
 
-}.mat-grid-list {
+}
+.mat-grid-list {
      display: block;
      position: relative;
      width: 85rem;
      margin-left: 17rem;
  }
-.mat-card-image {
-height: 22rem;
-}
+
 
 

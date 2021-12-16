@@ -3,17 +3,14 @@
   justify-content: space-between;
   padding: 2rem;
 }
-
 h1 {
-font-size: 1.5rem;
-font-family: 'Kanit';
+  font-size: 1.5rem;
+  font-family: 'Kanit';
 }
-
 .mat-icon {
-font-size: 2.5rem;
-color: red;
+  font-size: 2.5rem;
+  color: red;
 }
-
 .card-principal {
    background-image: url(/assets/img/ledd.jpg);
     background-color: #F1F5F9;
@@ -22,30 +19,52 @@ color: red;
     justify-content: center;
     align-items: center;
 }
-
-
 .mat-card-content {
- font-family: 'Kanit';
+  font-family: 'Kanit';
   background-color: #f2fbb5c9;
-
-}
-
-.title {
-  display: flex;
-  margin-top: 2rem;
-  justify-content: space-around;
-}
-.subtitle {
-   display: flex;
-   margin-top: 1rem;
-   margin-left: 2rem;
-   font-size: 1.7rem;
-   flex-direction: column;
-}
-.smallTheme {
-   margin-left: 21rem;
-   margin-top: 1rem;
+  width: 50rem;
+  height: 25rem;
+  overflow: hidden;
 }
 .img {
-height: 20rem;
+    max-width: 100% !important;
+    height: auto;
+    max-width: 100%;
 }
+.mat-card-image {
+    height: 25rem;
+    width: 25rem;
+    float: left;
+    display: flex;
+}
+.detalles-title {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  overflow: hidden;
+}
+.mat-card-title {
+ margin-top: 2rem;
+justify-content: space-around;
+                   display: flex;
+  margin-top: 1.5rem;
+  overflow: hidden;
+  }
+.detalles-subtitle {
+  flex-direction: column;
+  display: flex;
+}
+.mat-card-subtitle {
+  margin-left: 1.5rem;
+  margin-top: 1rem;
+  font-size: 1.2rem;
+}
+.smallTheme {
+   /*argin-left: 46rem;*/
+   margin-top: 8rem;
+   justify-content: space-around;
+                      display: flex;
+}
+
+
+
