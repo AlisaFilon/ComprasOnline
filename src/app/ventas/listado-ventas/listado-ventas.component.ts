@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component } from '@angular/core';
 import { Ventas } from "../../db_datos";
 import {MatDialog} from '@angular/material/dialog';
 import {DialogExampleComponent} from './dialog-example.component';
@@ -10,16 +10,20 @@ import {DialogExampleComponent} from './dialog-example.component';
   styleUrls: ['./listado-ventas.component.css']
 })
 
-export class ListadoVentasComponent implements OnInit {
+export class ListadoVentasComponent  {
+
 
 displayedColumns: string[] = ['ventas', 'descripcion', 'fecha'];
   dataSource = Ventas;
 
 
-  constructor(public dialog: MatDialog) { }
- openDialog() {this.dialog.open(DialogExampleComponent);}
 
-  ngOnInit(): void { }
+  constructor(public dialog: MatDialog) { }
+ openDialog(param1:any) {console.log(param1);
+
+ this.dialog.open(DialogExampleComponent);}
+
+
 
 
 }
