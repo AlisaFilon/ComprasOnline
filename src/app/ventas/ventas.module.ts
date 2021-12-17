@@ -16,6 +16,8 @@ import {MatDialogModule} from '@angular/material/dialog';
 import {DialogExampleComponent} from './listado-ventas/dialog-example.component';
 
 
+
+
 const ventasRoutes: Routes = [
 {path: 'detalles-venta', component: DetallesVentaComponent },
 {path: 'listado-ventas', component: ListadoVentasComponent }

@@ -1,6 +1,6 @@
-import { Component, OnInit, Input } from '@angular/core';
+import { Component, OnInit, Input, Inject } from '@angular/core';
 import { Ventas } from "../../db_datos";
-import { ListadoVentasComponent } from './listado-ventas.component';
+import { MatDialogRef, MAT_DIALOG_DATA} from '@angular/material/dialog';
 
 @Component({
   selector: 'app-dialog-example',
@@ -9,15 +9,12 @@ import { ListadoVentasComponent } from './listado-ventas.component';
 })
 
 
+export class DialogExampleComponent {
 
-export class DialogExampleComponent implements OnInit {
 
-/* @Input() param1:any; */
-data:any = '000';
-  constructor() { }
+constructor(public dialogRef: MatDialogRef<DialogExampleComponent>,
+                @Inject(MAT_DIALOG_DATA) public data: any,) {}
 
-  ngOnInit(): void {
-
-  }
 
 }
+
