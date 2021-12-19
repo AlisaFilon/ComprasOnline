@@ -21,7 +21,6 @@ this.totvent=totalvent();
 
   }
 
-
 function totalprod () {
 const totp = products;
 return totp.length;

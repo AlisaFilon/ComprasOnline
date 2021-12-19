@@ -11,7 +11,7 @@ export class ListadoProductosComponent implements OnInit {
 
 
  products = products
-
+ searchStr = ''
 
 
 

@@ -10,7 +10,7 @@ import {MatMenuModule} from '@angular/material/menu';
 import {RouterModule, Routes} from '@angular/router';
 import { CommonModule } from '@angular/common';
 import {MatGridListModule} from '@angular/material/grid-list';
-
+import { FormsModule } from '@angular/forms';
 
 import { ListadoProductosComponent } from './listado-productos/listado-productos.component';
 import { ProductCardComponent } from './product-card/product-card.component';
@@ -18,8 +18,8 @@ import { ProductDetailsComponent } from './product-details/product-details.compo
 
 
 
-/* import { FlexLayoutModule } from '@angular/flex-layout';
-import { FormsModule } from '@angular/forms'; */
+
+
 
 
 
@@ -47,8 +47,7 @@ const productRoutes: Routes = [
       MatIconModule,
       MatMenuModule,
       MatGridListModule,
-      /* FlexLayoutModule,
-      FormsModule, */
+      FormsModule,
       RouterModule.forRoot(productRoutes)
   ],
   exports: [

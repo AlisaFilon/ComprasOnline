@@ -21,9 +21,7 @@ displayedColumns: string[] = ['ventas', 'descripcion', 'fecha'];
 
 
 
- openDialog(param1:any)
- {
- console.log(param1);
+ openDialog(param1:any) {
 
 this.dialog.open(DialogExampleComponent, {
   width: '550px',
@@ -31,26 +29,9 @@ this.dialog.open(DialogExampleComponent, {
    });
 
    }
-
-
-
-
 }
 
-/*
 
-openDialog(): void {
-const dialogRef = this.dialog.open(DialogExampleComponent, {
-width: '250px',
-data: {name: this.name, animal: this.animal},
-});
-
-dialogRef.afterClosed().subscribe(result => {
-console.log('The dialog was closed');
-this.animal = result;
-});
-}
-*/
 
 
 

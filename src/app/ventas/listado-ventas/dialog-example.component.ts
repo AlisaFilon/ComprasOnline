@@ -15,6 +15,14 @@ export class DialogExampleComponent {
 constructor(public dialogRef: MatDialogRef<DialogExampleComponent>,
                 @Inject(MAT_DIALOG_DATA) public data: any,) {}
 
+ onNoClick(): void {
+    this.dialogRef.close();
+    console.log('CLOSE');
+    }
+    onClick(): void {
+        this.dialogRef.close();
+        console.log(this.data);
+        }
 
 }
 

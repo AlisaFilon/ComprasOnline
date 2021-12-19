@@ -5,6 +5,7 @@
 
     <h1>Listado de Productos</h1>
         <div class="hteme">
+
           <button mat-icon-button color="warn" routerLink="/formulario">
             <mat-icon>add_shopping_cart</mat-icon>
           </button>
@@ -13,15 +14,28 @@
 
 
 
+
+
     <div  class="listado-products">
-        <div class="listado-products-grid">
-          <label class="grid3"><img src="/assets/img/listtres.png" width="30" height="30" (click)="tresSelect()" ></label>
-          <label class="grid4"><img src="/assets/img/listquad.png" width="40" height="30"(click)="cuatroSelect()"></label>
+        <div class="listado-products-grid" >
+
+
+        <!--  <div class="row">
+            <div class="input-field col s6">
+              <input id="first_name2" class="validate" [(ngModel)]="searchStr">
+              <label class="active" for="first_name2">Filtro de Producto</label>
+            </div>
+          </div>-->
+
+
+          <label class="grid3" style="cursor:pointer"><img src="/assets/img/listtres.png" width="30" height="30" (click)="tresSelect()" ></label>
+          <label class="grid4" style="cursor:pointer"><img src="/assets/img/listquad.png" width="40" height="30"(click)="cuatroSelect()"></label>
         </div>
 
 
-      <!--<input type="checkbox" id="grd"/>-->
+
       <div class="listado-cards">
+
         <mat-grid-list cols="{{col}}" rowHeight="500px">
           <mat-grid-tile  *ngFor="let product of products">
           <app-product-card  [product]="product"> </app-product-card>

@@ -1,3 +1,17 @@
+<h1 mat-dialog-title>Nombre de venta: {{data.nombre}}</h1>
+<h1 mat-dialog-title>Description: {{data.descripcion | lowercase}}</h1>
+<h1 mat-dialog-title>Fecha de venta: {{data.fecha | date}}</h1>
+<h1 mat-dialog-title>Product: {{data.producto | uppercase}}</h1>
+<h1 mat-dialog-title>Cantidad de venta: {{data.cantidad }}</h1>
+<h1 mat-dialog-title>Cliente: {{data.persona}}</h1>
 
 
-{{data | json}}
+<div mat-dialog-actions>
+  <button mat-button  (click)="onClick()">OK</button>
+  <button mat-button (click)="onNoClick()">CERRAR</button>
+
+</div>
+
+
+
+<!--{{data | json}}-->
