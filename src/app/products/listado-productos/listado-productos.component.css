@@ -26,6 +26,8 @@ color: red;
 .listado-products-grid {
   margin-top: 1rem;
   margin-left: 2rem;
+  display: flex;
+  justify-content: space-between;
 }
 
 
@@ -41,6 +43,10 @@ color: red;
      width: 85rem;
      margin-left: 5rem;
  }
-
+button {
+    margin: 0.5rem;
+    margin-top: -1rem;
+    width: 5rem;
+}
 
 

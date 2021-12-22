@@ -1,5 +1,8 @@
 import { Component, OnInit } from '@angular/core';
 import { products } from "../../db_datos";
+import {MatDialog} from '@angular/material/dialog';
+import {FiltroProductosComponent} from './filtro-productos.component';
+
 
 
 @Component({
@@ -7,33 +10,28 @@ import { products } from "../../db_datos";
   templateUrl: './listado-productos.component.html',
   styleUrls: ['./listado-productos.component.css']
 })
-export class ListadoProductosComponent implements OnInit {
+export class ListadoProductosComponent {
+    products = products
+    searchStr = ''
 
 
- products = products
- searchStr = ''
+ constructor(public dialog: MatDialog) { }
+ openDialog(): void {
+  this.dialog.open(FiltroProductosComponent);
+}
 
 
-
-  constructor() { }
-
- col:any;
+  col:any;
   ngOnInit(): void {
   this.col="3"
 }
-
-tresSelect(){
-this.col="3";
+  tresSelect(){
+  this.col="3";
 }
-
-
-cuatroSelect(){
-this.col="4";
+  cuatroSelect(){
+  this.col="4";
 }
-
-
 }
-
 
 
 

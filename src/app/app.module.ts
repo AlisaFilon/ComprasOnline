@@ -4,6 +4,7 @@ import {MatToolbarModule} from '@angular/material/toolbar';
 import {MatIconModule} from '@angular/material/icon';
 import {MatMenuModule} from '@angular/material/menu';
 import {MatCardModule} from '@angular/material/card';
+import { FormsModule } from '@angular/forms';
 
 /* Components module */
 import { AppComponent } from './app.component';
@@ -34,6 +35,7 @@ const appRoutes: Routes = [
     HomeComponent
    ],
   imports: [
+    FormsModule,
     FormularioModule,
     VentasModule,
     ProductModule,
