@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component } from '@angular/core';
 
  export interface Productos {
   id: number;
@@ -21,6 +21,16 @@ export const products: Productos[]  = [
 
 ]
 
+
+export interface Img {
+img: any;
+
+}
+export const images: Img[]  = [
+{img:'/assets/img/imgcards/imgmini/1-1.png'},
+{img:'/assets/img/imgcards/imgmini/1-2.png'},
+{img:'/assets/img/imgcards/imgmini/1-3.png'},
+]
 
  export interface Tabla {
    nombre: string;

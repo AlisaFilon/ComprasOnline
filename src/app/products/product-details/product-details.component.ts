@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { ActivatedRoute } from '@angular/router';
-import { Productos, products } from "../../db_datos";
+import { Productos, products, images, Img } from "../../db_datos";
 
 
 @Component({
@@ -10,7 +10,9 @@ import { Productos, products } from "../../db_datos";
 })
 export class ProductDetailsComponent implements OnInit {
  products = products
- product: Productos | undefined;
+images = images
+product: Productos | undefined;
+
 
 
   constructor(private route: ActivatedRoute) { }
@@ -22,6 +24,17 @@ export class ProductDetailsComponent implements OnInit {
 
     // Find the product that correspond with the id provided in route.
     this.product = products.find(product => product.id === productIdFromRoute);
+
+
   }
 
+image:any;
+Image1(){let img = this.images[0];
+             return img.img; }
+Image2(){this.image = "https://www.puntronic.com/cdnassets/productos/PHIBHP398_00/EL_PHIBHP398_00-02.jpg";}
+Image3(){this.image = "https://www.puntronic.com/cdnassets/productos/PHIBHP398_00/EL_PHIBHP398_00-03.jpg";}
+
+
 }
+
+

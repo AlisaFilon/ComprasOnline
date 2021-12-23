@@ -1,13 +1,19 @@
-
 <div class="main-border">
-  <mat-toolbar>
-
-      <h1>Home</h1>
-
-  </mat-toolbar>
+<mat-toolbar color="primary">
+ OnlineCompras
+  <button mat-button routerLink="login">
+    <mat-icon>login</mat-icon>
+    Login
+  </button>
+</mat-toolbar>
 </div>
 
+<div class="content">
 
+  <router-outlet></router-outlet>
+
+
+</div>
 <div class="card-principal">
   <mat-card class="card-principal-bienvenida">
     <mat-card-content>
@@ -17,7 +23,7 @@
     </mat-card-content>
     <h4>Si esta listo para comenzar a interactual con mi tienda online</h4>
     <mat-card-actions>
-      <button  mat-stroked-button color="primary" routerLink="home">Haga Clic</button>
+      <!--<button  mat-stroked-button color="primary" routerLink="home">Haga Clic</button>-->
     </mat-card-actions>
   </mat-card>
 </div>

@@ -13,12 +13,27 @@
 
 
 <div class="card-principal">
-
   <div class="mat-card-content">
+
+
     <div *ngIf="product">
       <div class="img">
         <img mat-card-image src="{{product.img}}">
+        <img src="{{product.img}}" width="70" height="70" (click)="Image1()">
+        <img src="{{image}}" width="70" height="70" (click)="Image2()">
+        <img src="{{image}}" width="70" height="70" (click)="Image3()">
       </div>
+
+
+
+
+
+
+
+
+
+
+
       <div class="detalles">
         <div class="detalles-title">
           <mat-card-title>{{product.nombre  | uppercase}}</mat-card-title>

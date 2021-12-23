@@ -103,6 +103,16 @@
             ],
             "scripts": []
           }
+        },
+        "deploy": {
+          "builder": "@angular/fire:deploy",
+          "options": {
+            "prerender": false,
+            "ssr": false,
+            "browserTarget": "ComprasOnline:build:production",
+            "firebaseProject": "angular-sing-up",
+            "firebaseHostingSite": "angular-sing-up"
+          }
         }
       }
     }

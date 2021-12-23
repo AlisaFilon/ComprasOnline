@@ -1,0 +1,14 @@
+{
+  "targets": {
+    "angular-sing-up": {
+      "hosting": {
+        "ComprasOnline": [
+          "angular-sing-up"
+        ]
+      }
+    }
+  },
+  "projects": {
+    "default": "angular-sing-up"
+  }
+}

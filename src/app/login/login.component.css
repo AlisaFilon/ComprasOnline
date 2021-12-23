@@ -1,0 +1,29 @@
+.example-form {
+  min-width: 150px;
+  max-width: 500px;
+  width: 100%;
+}
+
+.example-full-width {
+  width: 100%;
+}
+
+.from-container {
+display: block;
+max-width: 300px;
+margin: auto;
+
+background: grey;
+padding: 48px;
+border-radius: 16px;
+}
+.from-container mat-form-field {
+width: 100%;
+}
+.center {
+display: flex;
+justify-content: center;
+}
+margin-top {
+margin-top: 16px;
+}
