@@ -11,9 +11,12 @@ export class SearchPipe implements PipeTransform{
 
 constructor (){ }
 
-transform (products:any, value:any){console.log(value);
-return products.filter((product:any) => {
-return product.nombre.includes(value)
+transform (products:any, value:any){
+return products.filter((product:any) => {console.log(value, product.precio);
+return product.precio == value
+
+/* return product.precio > value1 && product.precio <= value2 */
+
 })
 }
 

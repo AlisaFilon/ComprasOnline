@@ -1,3 +1,17 @@
+.mat-toolbar {
+  background-color: #6495ED;
+  justify-content: space-between;
+  padding: 2rem;
+}
+
+body {
+ background-image: url(/assets/img/ledd.jpg);
+ height: 100vh;
+ display: flex;
+ justify-content: center;
+ align-items: center;
+}
+
 .example-form {
   min-width: 150px;
   max-width: 500px;
@@ -9,21 +23,21 @@
 }
 
 .from-container {
-display: block;
-max-width: 300px;
-margin: auto;
-
-background: grey;
-padding: 48px;
-border-radius: 16px;
+ display: block;
+ max-width: 300px;
+ margin: auto;
+ background: #F1F3F4;
+ padding: 48px;
+ border-radius: 16px;
+ margin-top: 10rem;
 }
 .from-container mat-form-field {
-width: 100%;
+ width: 100%;
 }
 .center {
-display: flex;
-justify-content: center;
+ display: flex;
+ justify-content: center;
 }
-margin-top {
-margin-top: 16px;
+ margin-top {
+ margin-top: 16px;
 }
