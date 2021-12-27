@@ -16,7 +16,7 @@ export const products: Productos[]  = [
   {id:2, img:'/assets/img/imgcards/2.png', nombre: 'Cepillo electrico', modelo: 'MDL2', precio: 20, descripcion: 'rojo', caracteristicas: 'Potente secador de cabello de 2200 vatios', cantidad: 8 },
   {id:3, img:'/assets/img/imgcards/3.png', nombre: 'Plancha', modelo: 'MDL3', precio: 25, descripcion: 'rojo', caracteristicas: 'Potente secador de cabello de 2200 vatios', cantidad: 8 },
   {id:4, img:'/assets/img/imgcards/4.png', nombre: 'Campana secador', modelo: 'MDL4', precio: 10, descripcion: 'rojo', caracteristicas: 'Potente secador de cabello de 2200 vatios', cantidad: 8 },
-  {id:5, img:'/assets/img/imgcards/5.png', nombre: 'Secadores de pelo', modelo: 'MDL5', precio: 8, descripcion: 'rojo', caracteristicas: 'Potente secador de cabello de 2200 vatios', cantidad: 8 },
+  {id:5, img:'/assets/img/imgcards/5.png', nombre: 'Secadores de pelo', modelo: 'MDL5', precio: 10, descripcion: 'rojo', caracteristicas: 'Potente secador de cabello de 2200 vatios', cantidad: 8 },
   {id:6, img:'/assets/img/imgcards/6.png', nombre: 'Plancha', modelo: 'MDL6', precio: 35, descripcion: 'rojo', caracteristicas: 'Potente secador de cabello de 2200 vatios', cantidad: 8 },
 
 ]

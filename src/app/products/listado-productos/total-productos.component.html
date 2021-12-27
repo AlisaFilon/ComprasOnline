@@ -1,0 +1,20 @@
+<mat-card>
+  <mat-card-content>
+    <section class="example-section">
+      <h2 class="example-h2"> Precio de todos los productos en tienda:</h2>
+      <mat-form-field class="example-margin" appearance="fill">
+        <mat-card-title>{{totprice | currency: "€"}}</mat-card-title>
+
+      </mat-form-field>
+
+    </section>
+    <div mat-dialog-actions>
+
+      <button mat-button (click)="onNoClick()">CERRAR</button>
+    </div>
+  </mat-card-content>
+
+
+
+
+</mat-card>

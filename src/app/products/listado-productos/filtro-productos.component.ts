@@ -1,7 +1,11 @@
-import { Component, Input } from '@angular/core';
-import { Productos } from "../../db_datos";
+import { Component, Inject, Optional } from '@angular/core';
+import { products } from "../../db_datos";
 import { ListadoProductosComponent } from './listado-productos.component';
 import { MatDialogRef, MAT_DIALOG_DATA} from '@angular/material/dialog';
+import {MatDialog} from '@angular/material/dialog';
+import { SearchPipe } from './pipe/search.pipe';
+import {Pipe, PipeTransform } from '@angular/core';
+
 
 @Component({
   selector: 'app-filtro-productos',
@@ -9,19 +13,26 @@ import { MatDialogRef, MAT_DIALOG_DATA} from '@angular/material/dialog';
   styleUrls: ['./filtro-productos.component.css']
 })
 export class FiltroProductosComponent  {
+    products = products
+    searchStr:any
 
 
-  max:any = 100;
-  min:any = 0;
-constructor(public dialogRef: MatDialogRef<FiltroProductosComponent>) { }
 
-onNoClick(): void {
+
+constructor (public dialogRef: MatDialogRef<FiltroProductosComponent>,) { }
+
+    onNoClick(): void {
     this.dialogRef.close();
-    console.log('CLOSE');
-    }
-    onClick(): void {
-        this.dialogRef.close();
-        console.log('ok');
-        }
-   }
+                      }
+
+    onClick(searchStr:any): void {
+    console.log(this.searchStr);
+    const searchpipe = new SearchPipe();
+
+    this.products = searchpipe.transform(products, searchStr);
+                                 }
+
+
+                                       }
+
 

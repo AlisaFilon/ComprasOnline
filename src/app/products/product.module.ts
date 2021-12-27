@@ -11,14 +11,17 @@ import { RouterModule, Routes } from '@angular/router';
 import { CommonModule } from '@angular/common';
 import { MatGridListModule } from '@angular/material/grid-list';
 import { FormsModule } from '@angular/forms';
-
+import { MatInputModule } from '@angular/material/input';
+import {MatFormFieldModule } from '@angular/material/form-field';
 import { ListadoProductosComponent } from './listado-productos/listado-productos.component';
 import { ProductCardComponent } from './product-card/product-card.component';
 import { ProductDetailsComponent } from './product-details/product-details.component';
 import { FiltroProductosComponent } from './listado-productos/filtro-productos.component';
 import { MatSliderModule } from '@angular/material/slider';
 import { MatSelectModule } from '@angular/material/select';
-import {SearchPipe} from './listado-productos/search.pipe'
+import {SearchPipe} from './listado-productos/pipe/search.pipe';
+import {SortPipe} from './listado-productos/pipe/sort.pipe';
+import { TotalProductosComponent } from './listado-productos/total-productos.component';
 
 
 
@@ -35,13 +38,17 @@ const productRoutes: Routes = [
 @NgModule({
   declarations: [
   SearchPipe,
+  SortPipe,
   ListadoProductosComponent,
   ProductCardComponent,
   ProductDetailsComponent,
   FiltroProductosComponent,
+  TotalProductosComponent,
 
   ],
   imports: [
+      MatInputModule,
+      MatFormFieldModule,
       MatSelectModule,
       MatSliderModule,
       ReactiveFormsModule,
@@ -58,6 +65,7 @@ const productRoutes: Routes = [
       RouterModule.forRoot(productRoutes)
   ],
   exports: [
+    SearchPipe,
     ListadoProductosComponent,
     FiltroProductosComponent
   ],
