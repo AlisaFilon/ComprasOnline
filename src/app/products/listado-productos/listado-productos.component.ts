@@ -14,20 +14,36 @@ import { SortPipe } from './pipe/sort.pipe';
 export class ListadoProductosComponent implements OnInit {
     products = products
     searchStr:any;
-
-   precio:any
-
+    precio:any;
 
  constructor(public dialog: MatDialog ) { }
 
- openFilter(): void {
-  this.dialog.open(FiltroProductosComponent);
+
+/* <<--Кнопка FILTER-->> */
+  openFilter() {
+  const dialogRef = this.dialog.open(FiltroProductosComponent, {
+  width: '280px',
+  data: {searchStr: this.searchStr },
+
+  });
+ dialogRef.afterClosed().subscribe(result => {
+  this.searchStr = result;
+});
 }
 
+
+/* <<--Кнопка ORDEN-->> */
+SortBy(event:any) : void {
+const sortpipe = new SortPipe();
+this.products = sortpipe.transform(products, event);
+                         }
+
+/* <<--Кнопка TOTAL-->> */
 openTotal(): void {
   this.dialog.open(TotalProductosComponent);
 }
 
+/* <<--Смена колонок на 3 и 4-->> */
   col:any;
   ngOnInit(): void {
   this.col="3"
@@ -39,17 +55,14 @@ openTotal(): void {
   this.col="4";
 }
 
-SortBy(event:any) : void{console.log(event)
-const sortpipe = new SortPipe();
-this.products = sortpipe.transform(products, event);
-
-                                 }
-
-
-
-
 
 }
+
+
+
+
+
+
 
 
 

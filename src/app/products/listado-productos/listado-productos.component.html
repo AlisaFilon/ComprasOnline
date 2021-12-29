@@ -44,7 +44,7 @@
       <div class="listado-cards">
 
         <mat-grid-list cols="{{col}}" rowHeight="500px">
-          <mat-grid-tile  *ngFor="let product of products | sort:precio" >
+          <mat-grid-tile  *ngFor="let product of products | sort:precio | search: searchStr" >
           <app-product-card  [product]="product"> </app-product-card>
           </mat-grid-tile>
         </mat-grid-list>

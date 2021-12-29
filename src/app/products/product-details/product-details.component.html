@@ -13,24 +13,14 @@
 
 
 <div class="card-principal">
-  <div class="mat-card-content">
-
-
+  <div class="container">
     <div *ngIf="product">
       <div class="img">
-        <img mat-card-image src="{{product.img}}">
+        <img mat-card-image src="{{product.img}}" width="250" height="250">
         <img src="{{product.img}}" width="70" height="70" (click)="Image1()">
         <img src="{{image}}" width="70" height="70" (click)="Image2()">
         <img src="{{image}}" width="70" height="70" (click)="Image3()">
       </div>
-
-
-
-
-
-
-
-
 
 
 
@@ -52,3 +42,4 @@
     </div>
   </div>
 </div>
+

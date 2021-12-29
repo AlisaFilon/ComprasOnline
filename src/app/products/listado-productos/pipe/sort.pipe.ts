@@ -9,9 +9,8 @@ name: 'sort'
 
 export class SortPipe implements PipeTransform{
 transform(products: Array<any>, precio: any): any {
-if (!!precio){console.log(precio)
+if (!!precio){
 const sortedArray = _.sortBy(products, 'precio');
-console.log(sortedArray);
 return sortedArray;
 }
 return products;
