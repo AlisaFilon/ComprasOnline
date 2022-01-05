@@ -5,14 +5,14 @@
 
   <h1>Listado de Ventas</h1>
 
-  <button mat-icon-button color="warn" routerLink="/formulario">
+  <button mat-icon-button color="warn" routerLink="/lista-carrito">
     <mat-icon>add_shopping_cart</mat-icon>
   </button>
 </mat-toolbar>
 
 
 <div class="tab">
-  <table mat-table [dataSource]="dataSource" class="mat-elevation-z8">
+ <table mat-table [dataSource]="dataSource" class="mat-elevation-z8">
 
     <ng-container matColumnDef="ventas">
       <th mat-header-cell *matHeaderCellDef> Ventas </th>
@@ -33,7 +33,7 @@
 
     <tr mat-header-row *matHeaderRowDef="displayedColumns"></tr>
     <tr mat-row *matRowDef="let row; columns: displayedColumns;"></tr>
-  </table>
+ </table>
 </div>
 
 

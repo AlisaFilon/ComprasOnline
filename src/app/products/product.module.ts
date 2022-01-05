@@ -23,7 +23,8 @@ import { SearchPipe } from './listado-productos/pipe/search.pipe';
 import { SortPipe } from './listado-productos/pipe/sort.pipe';
 import { TotalProductosComponent } from './listado-productos/total-productos.component';
 import { MatDialogModule } from '@angular/material/dialog';
-
+import { ListaCarritoComponent } from './lista-carrito/lista-carrito.component';
+import {MatTableModule} from '@angular/material/table';
 
 
 
@@ -31,7 +32,9 @@ import { MatDialogModule } from '@angular/material/dialog';
 const productRoutes: Routes = [
 
 { path: 'listado-productos', component: ListadoProductosComponent },
-{ path: 'products/:productId', component: ProductDetailsComponent }
+{ path: 'products/:productId', component: ProductDetailsComponent },
+{ path: 'lista-carrito', component: ListaCarritoComponent },
+{ path: 'carrito/:productId', component: ProductDetailsComponent }
 ]
 
 
@@ -44,6 +47,7 @@ const productRoutes: Routes = [
   ProductDetailsComponent,
   FiltroProductosComponent,
   TotalProductosComponent,
+  ListaCarritoComponent,
 
   ],
   imports: [
@@ -63,6 +67,7 @@ const productRoutes: Routes = [
       MatMenuModule,
       MatGridListModule,
       FormsModule,
+      MatTableModule,
       RouterModule.forRoot(productRoutes)
   ],
   exports: [

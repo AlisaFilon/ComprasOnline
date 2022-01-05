@@ -5,6 +5,8 @@ import { FiltroProductosComponent } from './filtro-productos.component';
 import { TotalProductosComponent } from './total-productos.component';
 import { SearchPipe } from './pipe/search.pipe';
 import { SortPipe } from './pipe/sort.pipe';
+import { CarritoService } from '../carrito.service';
+
 
 @Component({
   selector: 'app-listado-productos',
@@ -16,7 +18,8 @@ export class ListadoProductosComponent implements OnInit {
     searchStr:any;
     precio:any;
 
- constructor(public dialog: MatDialog ) { }
+
+ constructor(public dialog: MatDialog, private carrito:CarritoService) { }
 
 
 /* <<--Кнопка FILTER-->> */
@@ -44,20 +47,26 @@ openTotal(): void {
 }
 
 /* <<--Смена колонок на 3 и 4-->> */
+
+  puesto:any
   col:any;
-  ngOnInit(): void {
-  this.col="3"
+
+
+  ngOnInit() {
+
+this.puesto = this.carrito.totpuesto ;
+  this.col="3";
+
 }
   tresSelect(){
   this.col="3";
+
 }
   cuatroSelect(){
   this.col="4";
 }
 
-
 }
-
 
 
 

@@ -12,7 +12,7 @@ h1 {
 }
 
 .form {
-  background-image: url(/assets/img/ledd.jpg);
+/*  background-image: url(/assets/img/ledd.jpg);*/
   height: 100vh;
   display: flex;
   justify-content: center;

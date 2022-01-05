@@ -6,7 +6,7 @@
     <h1>Listado de Productos</h1>
         <div class="hteme">
 
-          <button mat-icon-button color="warn" routerLink="/formulario">
+          <button mat-icon-button color="warn" routerLink="/lista-carrito">
             <mat-icon>add_shopping_cart</mat-icon>
           </button>
         </div>
@@ -20,29 +20,27 @@
         <div class="listado-products-grid" >
 
 
-          <!--  <div class="row">
-                <div class="input-field col s6">
-                  <input id="first_name1" class="validate" [(ngModel)]="Price">
-                  <label class="active" for="first_name1">Filtro de Producto</label>
-                <button mat-button  (click)="onClick()">OK</button>
-            </div>
-          </div>-->
 
             <div class="grid">
               <label class="grid3" style="cursor:pointer"><img src="/assets/img/listtres.png" width="30" height="30" (click)="tresSelect()" ></label>
               <label class="grid4" style="cursor:pointer"><img src="/assets/img/listquad.png" width="40" height="30"(click)="cuatroSelect()"></label>
             </div>
+
+
+
+       <h1>Presupuesto Cliente:{{puesto}}</h1>
+
+
             <div class="button">
-              <button mat-raised-button color ="primary" (click)="openFilter()">Filtrar</button>
-              <button mat-raised-button color="primary" (click)="SortBy($event)"> Ordenar</button>
-              <button mat-raised-button color="primary"(click)="openTotal()">Total</button>
+              <button mat-raised-button color ="basic" (click)="openFilter()">Filtrar</button>
+              <button mat-raised-button color="basic" (click)="SortBy($event)"> Ordenar</button>
+              <button mat-raised-button color="basic"(click)="openTotal()">Total</button>
             </div>
         </div>
 
 
 
       <div class="listado-cards">
-
         <mat-grid-list cols="{{col}}" rowHeight="500px">
           <mat-grid-tile  *ngFor="let product of products | sort:precio | search: searchStr" >
           <app-product-card  [product]="product"> </app-product-card>

@@ -13,8 +13,8 @@ import { HotToastService } from '@ngneat/hot-toast';
 export class LoginComponent  {
 
   loginForm = new FormGroup({
-  email: new FormControl('', [Validators.required, Validators.email]),
-  password: new FormControl('', Validators.required)
+  email: new FormControl('test+5@gantabi.com', [Validators.required, Validators.email]),
+  password: new FormControl('1254rtY524', Validators.required)
 });
 
 /*

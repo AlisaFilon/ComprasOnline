@@ -1,7 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { ActivatedRoute } from '@angular/router';
 import { Productos, products, images, Img } from "../../db_datos";
-
+import { CarritoService } from '../carrito.service';
 
 @Component({
   selector: 'app-product-details',
@@ -12,7 +12,8 @@ export class ProductDetailsComponent implements OnInit {
  products = products
 images = images
 product: Productos | undefined;
-
+displayedImg:  any;
+i:any;
 
 
   constructor(private route: ActivatedRoute) { }

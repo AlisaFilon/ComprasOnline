@@ -17,6 +17,7 @@ products = products
 
   constructor(public dialogRef: MatDialogRef<TotalProductosComponent>,) { }
   ngOnInit(): void {
+
   this.totprice=this.totalprice();
   }
 
@@ -24,10 +25,7 @@ onNoClick(): void {
     this.dialogRef.close();
     console.log('CLOSE');
     }
-  /*   onClick(): void {
- this.dialogRef.close();
-     console.log('CLOSE');
-     } */
+
 
 
 totalprice ():any {

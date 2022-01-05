@@ -1,0 +1,33 @@
+.mat-toolbar {
+  background-color: #6495ED;
+  justify-content: space-between;
+  padding: 2rem;
+}
+h1 {
+  font-size: 1.5rem;
+  font-family: 'Kanit';
+}
+.mat-icon {
+  font-size: 2.5rem;
+  color: red;
+}
+/*.tab {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+
+}*/
+
+table {
+ height: 10rem;
+ width: 75rem;
+ font-family: 'Kanit';
+ text-align: left;
+ font-size: 1.2rem;
+}
+.mat-card-title:not(:first-child), .mat-card-subtitle:not(:first-child) {
+    margin-top: 15px;
+    margin-left: 15rem;
+}
+
+

@@ -13,7 +13,7 @@ h1 {
 }
 
 .home {
-  background-image: url(/assets/img/ledd.jpg);
+ /* background-image: url(/assets/img/ledd.jpg);*/
    background-color: #F1F5F9;
    height: 100vh;
    display: flex;
