@@ -15,7 +15,6 @@ color: red;
 }
 
 .listado-products {
- /*background-image: url(/assets/img/ledd.jpg);*/
   display: flex;
   justify-content: center;
   flex-flow: column wrap;
@@ -41,7 +40,7 @@ color: red;
      display: block;
      position: relative;
      width: 85rem;
-     margin-left: 5rem;
+     margin-left: 12rem;
  }
 button {
     margin: 0.5rem;

@@ -9,18 +9,24 @@ import { ProductCardComponent } from './product-card/product-card.component';
 export class CarritoService {
  products = products;
  items=[] as any;
- totpuesto:any
-
-  constructor() { }
-
+ totpuesto:any;
+ probarpuesto:any;
 
 
 
 
-/*  agregarCarrito (product:any)  {
+constructor() { }
+
+
+
+agregarCarrito (product:any)  {
+
   const limit = 80;
+  const pc = (limit - ((this.totpuesto || 0) + product.precio));
+  this.probarpuesto = pc;
   const curItem = this.items.find((elemento:any) => (elemento.id==product.id));
-console.log(limit - ((this.totpuesto || 0) + product.precio))
+console.log(pc);
+
   if(limit - ((this.totpuesto || 0) + product.precio) >= 0){
 	  if(curItem){
 	    curItem.cantidad+=1;
@@ -32,16 +38,16 @@ console.log(limit - ((this.totpuesto || 0) + product.precio))
   this.totpuesto = this.items
     .map((elemento:any) => (elemento.precio*elemento.cantidad))
     .reduce((previousValue:any, currentValue:any) => previousValue + currentValue);
+     return this.totpuesto;
 
-  return this.totpuesto;
-
-} */
-
+}
 
 
 
 
 
+
+/*
  agregarCarrito(product: any){
 console.log()
   const curItem = this.items.find((elemento:any) => (elemento.id==product.id));
@@ -57,6 +63,7 @@ console.log()
     .reduce((previousValue:any, currentValue:any) => previousValue + currentValue);
 
 }
+ */
 
 
 

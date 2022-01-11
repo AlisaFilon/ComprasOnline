@@ -1,4 +1,4 @@
-import { Component, OnInit, Input } from '@angular/core';
+import { Component, OnInit, Input, Output } from '@angular/core';
 import { products } from "../../db_datos";
 import {MatDialog} from '@angular/material/dialog';
 import { FiltroProductosComponent } from './filtro-productos.component';
@@ -18,6 +18,7 @@ export class ListadoProductosComponent implements OnInit {
     searchStr:any;
     precio:any;
 
+precupuesto: any;
 
  constructor(public dialog: MatDialog, private carrito:CarritoService) { }
 
@@ -28,12 +29,18 @@ export class ListadoProductosComponent implements OnInit {
   width: '280px',
   data: {searchStr: this.searchStr },
 
-  });
- dialogRef.afterClosed().subscribe(result => {
+ });
+  dialogRef.afterClosed().subscribe(result => {
   this.searchStr = result;
-});
+ });
 }
 
+resultado(event: number) {
+console.log(this.precupuesto, event)
+  if (event){
+  this.precupuesto=event;
+ }
+}
 
 /* <<--Кнопка ORDEN-->> */
 SortBy(event:any) : void {
@@ -48,23 +55,27 @@ openTotal(): void {
 
 /* <<--Смена колонок на 3 и 4-->> */
 
-  puesto:any
+
   col:any;
 
 
   ngOnInit() {
-
-this.puesto = this.carrito.totpuesto ;
+  /* this.proba = this.carrito.probarpuesto; */
+console.log(this.precupuesto);
   this.col="3";
 
 }
   tresSelect(){
   this.col="3";
 
+
 }
   cuatroSelect(){
   this.col="4";
 }
+
+
+
 
 }
 

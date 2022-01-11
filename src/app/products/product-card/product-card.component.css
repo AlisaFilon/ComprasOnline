@@ -4,28 +4,29 @@
         margin-left: 15rem;
         margin-top: 1.2rem;
     }*/
+a {
+text-decoration: none;
 
+}
 .mat-card {
   height: 24rem;
   width: 18rem;
-  color: #E2F0FF;
-  background-color: #F0F0F0;
+  color: #d8e6f3;
+ /* background-color: #D8E6F3;*/
   margin-top: 0rem;
 /*  box-shadow: 0 0 10px 5px #F0F0F0;*/
-  border: 1px solid #F0F0F0;
+  border: 1px solid #D8E6F3;
   font-family: 'Kanit';
-  }
-
-
-
+}
 .mat-card-title {
-    font-size: 24px;
+    font-size: 1.2rem;
     font-weight: 500;
-    margin-left: 1rem;
+  /*  margin-left: 1rem;*/
     color: #212121;
+    text-align: center;
 }
 .mat-card-subtitle, .mat-card-content{
-    font-size: 15px;
+    font-size: 1.2rem;
     color: black;
     font-weight: bold;
     margin-left: 1rem;

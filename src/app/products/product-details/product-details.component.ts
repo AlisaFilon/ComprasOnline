@@ -16,7 +16,7 @@ displayedImg:  any;
 i:any;
 
 
-  constructor(private route: ActivatedRoute) { }
+  constructor(private route: ActivatedRoute, private carrito:CarritoService) { }
 
   ngOnInit() {
     // First get the product id from the current route.
@@ -26,8 +26,12 @@ i:any;
     // Find the product that correspond with the id provided in route.
     this.product = products.find(product => product.id === productIdFromRoute);
 
-
   }
+
+agregarCarrito(product:any) {
+  this.carrito.agregarCarrito(product);
+  }
+
 
 image:any;
 Image1(){let img = this.images[0];

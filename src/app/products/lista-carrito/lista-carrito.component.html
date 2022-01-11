@@ -10,26 +10,28 @@
   </div>
 </mat-toolbar>
 
+<div class="container">
+  <table datatable class="row-border hover" >
+    <tr>
+      <th mat-sort-header="nombre">Nombre</th>
+      <th mat-sort-header="precio">Precio</th>
+      <th mat-sort-header="cantidad">Cantidad</th>
+    </tr>
+    <tr *ngFor="let item of items">
+      <td >{{item.nombre}}</td>
+      <td>{{item.precio}}</td>
+      <td>{{item.cantidad}}</td>
+    </tr>
+    <tr>
+      <td colspan="3">
+        <!--<span> <i class="material-icons" (click)="Borrar()" style="cursor:pointer"> delete</i> </span>-->
+        <mat-card-title>TOTAL: {{puesto}}</mat-card-title>
+        <mat-card-title>Presupuesto Cliente: {{probar}}</mat-card-title>
+      </td>
+        </tr>
+  </table>
+</div>
 
-<table datatable class="row-border hover" >
-  <tr>
-    <th mat-sort-header="nombre">Nombre</th>
-    <th mat-sort-header="precio">Precio</th>
-    <th mat-sort-header="cantidad">Cantidad</th>
-
-  </tr>
-
-  <tr *ngFor="let item of items">
-
-    <td >{{item.nombre}}</td>
-    <td>{{item.precio}}</td>
-    <td>{{item.cantidad}}</td>
-
-  </tr>
-</table>
 
 
-<span> <i class="material-icons" (click)="Borrar()" style="cursor:pointer"> delete</i> </span>
-
-<mat-card-title>Presupuesto Cliente: {{puesto}}</mat-card-title>
 

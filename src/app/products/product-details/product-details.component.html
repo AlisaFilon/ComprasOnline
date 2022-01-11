@@ -34,7 +34,7 @@
           <mat-card-subtitle>{{product.caracteristicas}}</mat-card-subtitle>
         </div>
         <div class="smallTheme">
-          <button mat-icon-button  color="warn" routerLink="/formulario">
+          <button mat-icon-button  color="warn" (click)="agregarCarrito(product)">
             <mat-icon>add_shopping_cart</mat-icon>
           </button>
         </div>

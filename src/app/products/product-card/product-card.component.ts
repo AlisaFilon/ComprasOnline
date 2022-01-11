@@ -1,7 +1,6 @@
-import { Component, OnInit, Input, Injectable } from '@angular/core';
+import { Component, OnInit, Input, Injectable, EventEmitter, Output} from '@angular/core';
 import { products } from "../../db_datos";
 import { CarritoService } from '../carrito.service';
-
 
 @Component({
   selector: 'app-product-card',
@@ -11,17 +10,23 @@ import { CarritoService } from '../carrito.service';
 export class ProductCardComponent implements OnInit {
  products = products;
 
+
 @Input() product:any;
 
+@Output() prsupuesto = new EventEmitter<number>();
 
   constructor (private carrito:CarritoService){ }
-  puesto:any
+
   ngOnInit(): void {
 
   }
- agregarCarrito(product:any) {
+
+
+
+agregarCarrito(product:any) {
   this.carrito.agregarCarrito(product);
-  this.puesto = this.carrito.totpuesto ;
-      /*  window.alert("Producto adicionado con id "+product.id); */
+
+  console.log(this.carrito.probarpuesto)
+ this.prsupuesto.emit(this.carrito.probarpuesto);
   }
 }
