@@ -13,8 +13,6 @@ h1 {
 }
 
 .home {
- /* background-image: url(/assets/img/ledd.jpg);*/
-   background-color: #F1F5F9;
    height: 100vh;
    display: flex;
    justify-content: center;
@@ -30,7 +28,8 @@ h1 {
   justify-content: center;
   flex-direction: column;
   align-items: center;
-  box-shadow: rgba(17, 12, 46, 0.15) 0px 48px 100px 0px;
+  box-shadow: 0 0 10px 5px #F0F0F0;
+  border: 1px solid #6495ED;
   border-radius: 0.5rem;
 
 }

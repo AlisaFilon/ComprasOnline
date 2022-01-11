@@ -15,15 +15,9 @@
 <div class="card-principal">
   <div class="container">
     <div *ngIf="product">
-      <div class="img">
-        <img mat-card-image src="{{product.img}}" width="250" height="250">
-        <img src="{{product.img}}" width="70" height="70" (click)="Image1()">
-        <img src="{{image}}" width="70" height="70" (click)="Image2()">
-        <img src="{{image}}" width="70" height="70" (click)="Image3()">
+      <div class="product-img">
+        <img mat-card-image [src]="product.smallimg[displayedImg]" width="250" height="250" id="ProductImg">
       </div>
-
-
-
       <div class="detalles">
         <div class="detalles-title">
           <mat-card-title>{{product.nombre  | uppercase}}</mat-card-title>
@@ -33,8 +27,14 @@
           <mat-card-subtitle>{{product.modelo}}</mat-card-subtitle>
           <mat-card-subtitle>{{product.caracteristicas}}</mat-card-subtitle>
         </div>
+        <div class="detalles-img-row">
+          <div class="detalles-img-col" *ngFor="let image of product.smallimg; let i = index">
+            <img [src]="image" width="100" height="80" alt="" (click)="displayedImg = i">
+          </div>
+        </div>
+
         <div class="smallTheme">
-          <button mat-icon-button  color="warn" (click)="agregarCarrito(product)">
+          <button mat-icon-button color="warn" (click)="agregarCarrito(product)">
             <mat-icon>add_shopping_cart</mat-icon>
           </button>
         </div>
@@ -42,4 +42,3 @@
     </div>
   </div>
 </div>
-

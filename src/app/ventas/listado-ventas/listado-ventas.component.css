@@ -4,17 +4,18 @@
   justify-content: space-between;
   padding: 2rem;
 }
+
 h1 {
- font-size: 1.5rem;
- font-family: 'Kanit';
+  font-size: 1.5rem;
+  font-family: 'Kanit';
 }
+
 .mat-icon {
-font-size: 2.5rem;
-color: red;
+  font-size: 2.5rem;
+  color: red;
 }
 
 .tab {
-    /*background-image: url(/assets/img/ledd.jpg);*/
   height: 100vh;
   display: flex;
   justify-content: center;
@@ -23,32 +24,32 @@ color: red;
 
 
 table {
- height: 40rem;
- width: 75rem;
- font-family: 'Kanit';
+  height: 40rem;
+  width: 75rem;
+  font-family: 'Kanit';
 }
 
 table.mat-table {
-background-color: cornflowerblue;
+  background-color: cornflowerblue;
 }
 
 .mat-cell, .mat-footer-cell {
-    font-size: 21px;
-    background-color: aliceblue;
+  font-size: 21px;
+  background-color: white;
 }
 
 th.mat-header-cell:first-of-type, td.mat-cell:first-of-type, td.mat-footer-cell:first-of-type {
-    padding-left: 8rem;
-    width: 6rem;
+  padding-left: 8rem;
+  width: 6rem;
 }
 
 th.mat-header-cell, td.mat-cell, td.mat-footer-cell {
-font-size: 20px;
-width: 6rem;
-padding-left: 8rem;
+  font-size: 20px;
+  width: 6rem;
+  padding-left: 8rem;
 }
 
 th.mat-header-cell:last-of-type, td.mat-cell:last-of-type, td.mat-footer-cell:last-of-type {
-width: 6rem;
-padding-left: 6rem;
+  width: 6rem;
+  padding-left: 6rem;
 }

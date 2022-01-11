@@ -3,6 +3,7 @@ import { Component } from '@angular/core';
  export interface Productos {
   id: number;
   img: any;
+  smallimg: any;
   nombre: string;
   modelo: string;
   descripcion: string;
@@ -14,7 +15,9 @@ import { Component } from '@angular/core';
 
 export const products: Productos[]  = [
 
-  {id:1, img:'/assets/img/imgcards/1.png',
+  {id:1,
+    img:'/assets/img/imgcards/1.png',
+    smallimg:['/assets/img/imgcards/1.png', '/assets/img/imgcards/imgmini/1-2.png', '/assets/img/imgcards/imgmini/1-3.png'],
   nombre: 'Secadores de pelo',
   modelo: 'MDL1',
   precio: 15,
@@ -26,6 +29,7 @@ export const products: Productos[]  = [
 
   {id:2,
   img:'/assets/img/imgcards/2.png',
+    smallimg:['/assets/img/imgcards/2.png', '/assets/img/imgcards/imgmini/1-2.png', '/assets/img/imgcards/imgmini/1-3.png'],
   nombre: 'Cepillo electrico',
   modelo: 'MDL2',
   precio: 20,
@@ -35,7 +39,9 @@ export const products: Productos[]  = [
   disponible: true },
 
 
-  {id:3, img:'/assets/img/imgcards/3.png',
+  {id:3,
+    img:'/assets/img/imgcards/3.png',
+    smallimg:['/assets/img/imgcards/imgmini/1-1.png', '/assets/img/imgcards/imgmini/1-2.png', '/assets/img/imgcards/imgmini/1-3.png'],
   nombre: 'Plancha',
   modelo: 'MDL3',
   precio: 25,
@@ -47,6 +53,7 @@ export const products: Productos[]  = [
 
   {id:4,
   img:'/assets/img/imgcards/4.png',
+    smallimg:['/assets/img/imgcards/imgmini/1-1.png', '/assets/img/imgcards/imgmini/1-2.png', '/assets/img/imgcards/imgmini/1-3.png'],
   nombre: 'Campana secador',
   modelo: 'MDL4',
   precio: 10,
@@ -58,6 +65,7 @@ export const products: Productos[]  = [
 
   {id:5,
   img:'/assets/img/imgcards/5.png',
+    smallimg:['/assets/img/imgcards/imgmini/1-1.png', '/assets/img/imgcards/imgmini/1-2.png', '/assets/img/imgcards/imgmini/1-3.png'],
   nombre: 'Secadores de pelo',
   modelo: 'MDL5',
   precio: 10,
@@ -69,6 +77,7 @@ export const products: Productos[]  = [
 
   {id:6,
   img:'/assets/img/imgcards/6.png',
+    smallimg:['/assets/img/imgcards/imgmini/1-1.png', '/assets/img/imgcards/imgmini/1-2.png', '/assets/img/imgcards/imgmini/1-3.png'],
   nombre: 'Plancha',
   modelo: 'MDL6',
   precio: 35,
@@ -80,6 +89,9 @@ export const products: Productos[]  = [
 ]
 
 
+
+
+
 export interface Img {
 img: any;
 
@@ -87,8 +99,13 @@ img: any;
 export const images: Img[]  = [
 {img:'/assets/img/imgcards/imgmini/1-1.png'},
 {img:'/assets/img/imgcards/imgmini/1-2.png'},
-{img:'/assets/img/imgcards/imgmini/1-3.png'},
+{img:'/assets/img/imgcards/imgmini/1-3.png'}
 ]
+
+
+
+
+
 
  export interface Tabla {
    nombre: string;

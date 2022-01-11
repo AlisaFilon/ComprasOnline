@@ -3,92 +3,77 @@
   justify-content: space-between;
   padding: 2rem;
 }
+
 h1 {
   font-size: 1.5rem;
   font-family: 'Kanit';
 }
+
 .mat-icon {
   font-size: 2.5rem;
   color: red;
 }
-body {
-    background-color: #e2e2e2;
-    font-family: 'Kanit';
+
+.card-principal {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.mat-card-image {
+  height: 25rem;
+  width: 25rem;
+  float: left;
+  display: flex;
+  padding: 1rem;
 }
 .container {
-    width: 900px;
-    margin: 50px auto 0;
-    background-color: #fff;
-    padding: 15px;
-    box-shadow: 0 0 10px 5px #F0F0F0;
-    border: 1px solid #F0F0F0;
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-}
-.img {
-    margin-right: 50px;
-
-    height: auto;
-    max-width: 100%;
-}
-.descripcion p {
-    font-size: 15px;
-}
-.descripcion span {
-    margin-top: 15px;
-    display: inline-block;
-    font-weight: 600;
-    font-size: 30px;
-    color: #353535;
-}
-.card-principal {
-    background-color: #F1F5F9;
-    height: 100vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-.mat-card-content {
   font-family: 'Kanit';
-  background-color: #gold;
-  width: 50rem;
-  height: 25rem;
-  overflow: hidden;
+  width: 900px;
+  padding: 15px;
+  box-shadow: 0 0 10px 5px #F0F0F0;
+  border-left: 2px solid #6495ED;
+  border-radius: 0.5rem;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
 }
-.mat-card-image {
-    height: 25rem;
-    width: 25rem;
-    float: left;
-    display: flex;
-}
+
+
 .detalles-title {
   display: flex;
-  flex-direction: row;
   justify-content: space-around;
-  overflow: hidden;
-}
-.mat-card-title {
   margin-top: 2rem;
-  justify-content: space-around;
-  display: flex;
-  margin-top: 1.5rem;
-  overflow: hidden;
-  }
+}
+
 .detalles-subtitle {
   flex-direction: column;
   display: flex;
+  border-left: 1px solid rgba(0,0,0,0.25);
+  padding: 2.5rem;
+  margin-top: 5rem;
 }
+
 .mat-card-subtitle {
   margin-left: 1.5rem;
   margin-top: 1rem;
   font-size: 1.2rem;
 }
-
+.detalles-img-row {
+  margin-top: 10rem;
+  margin-left: 5rem;
+  flex-direction: row;
+  display: flex;
+}
+.detalles-img-col {
+  flex-basis: 15%;
+  cursor: pointer;
+}
 .smallTheme {
-   margin-left: 49rem;
-   margin-top: 10rem;
-   justify-content: space-around;
-   display: flex;
+  margin-left: 50rem;
+  margin-top: -3rem;
+  justify-content: space-around;
+  display: flex;
 }
 
 

@@ -5,11 +5,10 @@
 }
 
 body {
-/* background-image: url(/assets/img/ledd.jpg);*/
- height: 100vh;
- display: flex;
- justify-content: center;
- align-items: center;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .example-form {
@@ -23,21 +22,27 @@ body {
 }
 
 .from-container {
- display: block;
- max-width: 300px;
- margin: auto;
- background: #F1F3F4;
- padding: 48px;
- border-radius: 16px;
- margin-top: 10rem;
+  display: block;
+  max-width: 300px;
+  margin: auto;
+  background: white;
+  color: dimgrey;
+  border: 1px solid #6495ED;
+  box-shadow: 0 0 10px 5px #F0F0F0;
+  padding: 48px;
+  border-radius: 16px;
+  margin-top: 10rem;
 }
+
 .from-container mat-form-field {
- width: 100%;
+  width: 100%;
 }
+
 .center {
- display: flex;
- justify-content: center;
+  display: flex;
+  justify-content: center;
 }
- margin-top {
- margin-top: 16px;
+
+margin-top {
+  margin-top: 16px;
 }

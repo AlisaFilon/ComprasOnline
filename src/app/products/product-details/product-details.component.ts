@@ -1,7 +1,8 @@
-import { Component, OnInit } from '@angular/core';
-import { ActivatedRoute } from '@angular/router';
-import { Productos, products, images, Img } from "../../db_datos";
-import { CarritoService } from '../carrito.service';
+import {Component, OnInit} from '@angular/core';
+import {ActivatedRoute} from '@angular/router';
+import {Productos, products, images} from "../../db_datos";
+import {CarritoService} from '../carrito.service';
+
 
 @Component({
   selector: 'app-product-details',
@@ -9,14 +10,16 @@ import { CarritoService } from '../carrito.service';
   styleUrls: ['./product-details.component.css']
 })
 export class ProductDetailsComponent implements OnInit {
- products = products
-images = images
-product: Productos | undefined;
-displayedImg:  any;
-i:any;
+  products = products
+  images = images
+  product: Productos | undefined
+  i: any;
+  ProductImg: any;
 
+  displayedImg: any = 0;
 
-  constructor(private route: ActivatedRoute, private carrito:CarritoService) { }
+  constructor(private route: ActivatedRoute, private carrito: CarritoService) {
+  }
 
   ngOnInit() {
     // First get the product id from the current route.
@@ -28,18 +31,9 @@ i:any;
 
   }
 
-agregarCarrito(product:any) {
-  this.carrito.agregarCarrito(product);
+  agregarCarrito(product: any) {
+    this.carrito.agregarCarrito(product);
   }
-
-
-image:any;
-Image1(){let img = this.images[0];
-             return img.img; }
-Image2(){this.image = "https://www.puntronic.com/cdnassets/productos/PHIBHP398_00/EL_PHIBHP398_00-02.jpg";}
-Image3(){this.image = "https://www.puntronic.com/cdnassets/productos/PHIBHP398_00/EL_PHIBHP398_00-03.jpg";}
-
-
 }
 
 

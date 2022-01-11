@@ -1,44 +1,52 @@
- @import url('https://fonts.googleapis.com/css2?family=IM+Fell+French+Canon+SC&family=Kanit:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=IM+Fell+French+Canon+SC&family=Kanit:wght@300&display=swap');
+
 /* .material-icons {
         font-size: 3rem;
         margin-left: 15rem;
         margin-top: 1.2rem;
     }*/
 a {
-text-decoration: none;
+  text-decoration: none;
 
 }
+
 .mat-card {
   height: 24rem;
   width: 18rem;
   color: #d8e6f3;
- /* background-color: #D8E6F3;*/
   margin-top: 0rem;
-/*  box-shadow: 0 0 10px 5px #F0F0F0;*/
   border: 1px solid #D8E6F3;
   font-family: 'Kanit';
+  box-shadow: 0 0 10px 5px #F0F0F0;
+  border-left: 1px solid #6495ED;
+  border-radius: 0.5rem;
 }
+
 .mat-card-title {
-    font-size: 1.2rem;
-    font-weight: 500;
-  /*  margin-left: 1rem;*/
-    color: #212121;
-    text-align: center;
+  font-size: 1.2rem;
+  font-weight: 500;
+  color: #212121;
+  text-align: center;
 }
-.mat-card-subtitle, .mat-card-content{
-    font-size: 1.2rem;
-    color: black;
-    font-weight: bold;
-    margin-left: 1rem;
-    margin-top: 1.5rem;
+
+.mat-card-subtitle, .mat-card-content {
+  font-size: 1.2rem;
+  color: black;
+  font-weight: bold;
+  margin-left: 1rem;
+  margin-top: 1.5rem;
 }
 
 .material-icons {
-    font-size: 2rem;
-    margin-left: 15rem;
-    margin-top:  -6rem;
-    color: red;
+  font-size: 2rem;
+  margin-left: 15rem;
+  margin-top: -6rem;
+  color: red;
 }
+
 .mat-card-image {
-  height: 18rem;
+  height: 14rem;
+  width: 15rem;
+  margin-left: 1.5rem;
+  padding-top: 3rem;
 }
