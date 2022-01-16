@@ -14,8 +14,6 @@ export class ProductDetailsComponent implements OnInit {
   images = images
   product: Productos | undefined
   i: any;
-  ProductImg: any;
-
   displayedImg: any = 0;
 
   constructor(private route: ActivatedRoute, private carrito: CarritoService) {

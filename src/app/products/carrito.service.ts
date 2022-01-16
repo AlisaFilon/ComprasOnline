@@ -1,6 +1,6 @@
 import { Injectable } from '@angular/core';
 import { products } from "../db_datos";
-import { ProductCardComponent } from './product-card/product-card.component';
+
 
 
 @Injectable({
@@ -10,37 +10,40 @@ export class CarritoService {
  products = products;
  items=[] as any;
  totpuesto:any;
- probarpuesto:any;
-
+ puestoCliente:any;
+ count:any
 
 
 
 constructor() { }
 
 
+  agregarCarrito(product: any) {
 
-agregarCarrito (product:any)  {
+    const limit = 80;
+    const pc = (limit - ((this.totpuesto || 0) + product.precio));
+    this.puestoCliente = pc;
+    const curItem = this.items.find((elemento: any) => (elemento.id == product.id));
+    console.log(pc);
 
-  const limit = 80;
-  const pc = (limit - ((this.totpuesto || 0) + product.precio));
-  this.probarpuesto = pc;
-  const curItem = this.items.find((elemento:any) => (elemento.id==product.id));
-console.log(pc);
+    if (limit - ((this.totpuesto || 0) + product.precio) >= 0) {
+      if (curItem) {
+        curItem.cantidad += 1;
+      } else {
+        this.items.push(product);
+      }
+      /*this.count += .cantidad;*/
+    }
 
-  if(limit - ((this.totpuesto || 0) + product.precio) >= 0){
-	  if(curItem){
-	    curItem.cantidad+=1;
-	  } else {
-	    this.items.push(product);
-	  }
+    this.totpuesto = this.items
+      .map((elemento: any) => (elemento.precio * elemento.cantidad))
+      .reduce((previousValue: any, currentValue: any) => previousValue + currentValue);
+    this.count = this.items
+      .map((elemento: any) => elemento.cantidad)
+      .reduce((previousValue: any, currentValue: any) => previousValue + currentValue);
+    return this.totpuesto;
+
   }
-
-  this.totpuesto = this.items
-    .map((elemento:any) => (elemento.precio*elemento.cantidad))
-    .reduce((previousValue:any, currentValue:any) => previousValue + currentValue);
-     return this.totpuesto;
-
-}
 
 
 

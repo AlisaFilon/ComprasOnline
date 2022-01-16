@@ -1,7 +1,9 @@
 .mat-toolbar {
+ /* border-image: ;*/
   background-color: #6495ED;
   justify-content: space-between;
-  padding: 2rem;
+  padding: 1rem;
+  outline: 5px solid #e3e3e3;
 }
 
 h1 {

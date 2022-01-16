@@ -1,4 +1,4 @@
-import { Component, OnInit, Input, Injectable, EventEmitter, Output} from '@angular/core';
+import { Component, OnInit, Input, EventEmitter, Output} from '@angular/core';
 import { products } from "../../db_datos";
 import { CarritoService } from '../carrito.service';
 
@@ -12,7 +12,6 @@ export class ProductCardComponent implements OnInit {
 
 
 @Input() product:any;
-
 @Output() prsupuesto = new EventEmitter<number>();
 
   constructor (private carrito:CarritoService){ }
@@ -25,8 +24,6 @@ export class ProductCardComponent implements OnInit {
 
 agregarCarrito(product:any) {
   this.carrito.agregarCarrito(product);
-
-  console.log(this.carrito.probarpuesto)
- this.prsupuesto.emit(this.carrito.probarpuesto);
+  this.prsupuesto.emit(this.carrito.puestoCliente);
   }
 }

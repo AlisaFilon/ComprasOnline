@@ -12,16 +12,17 @@ export class ListaCarritoComponent implements OnInit {
  id:any
  elem:any
  items=[] as any;
+ total:any;
  puesto:any
- probar:any
+  totalcount:any;
 
  constructor(private carrito:CarritoService) { }
 
     ngOnInit(): void {
-    this.items=this.carrito.ListarCarrito();
-    this.puesto = this.carrito.totpuesto ;
-    this.probar = this.carrito.probarpuesto;
-
+    this.items = this.carrito.ListarCarrito();
+    this.total = this.carrito.totpuesto ;
+    this.puesto = this.carrito.puestoCliente;
+    this.totalcount = this.carrito.count;
   }
     Borrar(): void{
     this.elem=this.carrito.Eliminar(this.id);

@@ -8,6 +8,7 @@
 
           <button mat-icon-button color="warn" routerLink="/lista-carrito">
             <mat-icon>add_shopping_cart</mat-icon>
+
           </button>
         </div>
 </mat-toolbar>
@@ -28,7 +29,7 @@
 
 
 
-       <h1>Presupuesto Cliente: {{precupuesto}}</h1>
+       <h1>Presupuesto Cliente: {{(presupuesto == -1 ? 80 : presupuesto)}}</h1>
 
 
 

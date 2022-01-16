@@ -2,6 +2,7 @@
   background-color: #6495ED;
   justify-content: space-between;
   padding: 2rem;
+  outline: 5px solid #e3e3e3;
 }
 
 h1 {
@@ -17,13 +18,15 @@ h1 {
 .container {
   height: 100vh;
   display: flex;
+ /* justify-content: center;
+  align-items: center;*/
+  margin-top: -45rem;
   justify-content: center;
-  align-items: center;
-  margin-top: -15rem;
 }
 
 table {
   width: 65rem;
+  margin-top: 49rem;
   font-family: 'Kanit';
   text-align: center;
   font-size: 1.2rem;
