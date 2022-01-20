@@ -44,44 +44,11 @@ constructor() { }
     return this.totpuesto;
 
   }
-
-
-
-
-
-
-/*
- agregarCarrito(product: any){
-console.log()
-  const curItem = this.items.find((elemento:any) => (elemento.id==product.id));
-
-  if(curItem){
-    curItem.cantidad+=1;
-  } else {
-    this.items.push(product);
-  }
-
-  this.totpuesto = this.items
-    .map((elemento:any) => (elemento.precio*elemento.cantidad))
-    .reduce((previousValue:any, currentValue:any) => previousValue + currentValue);
-
-}
- */
-
-
-
-
-
-  Eliminar(id:any){
-  const resultado=this.items.findIndex((e:any)=> e.id == id);
-  this.items.splice(resultado,1);
-  return this.items;
-  }
-
-  /* LimpiarCarrito(){
-  this.items=[];
-  return this.items;
-  } */
+   Eliminar(id:any){
+   const resultado=this.items.findIndex((e:any)=> e.id == id);
+   this.items.splice(resultado,1);
+   return this.items;
+   }
 
    ListarCarrito(){
    return this.items;

@@ -11,7 +11,7 @@
 
               <div class="price">
                 <mat-card-subtitle>{{product.precio}}</mat-card-subtitle>
-                <button mat-icon-button color="black" (click)="agregarCarrito(product)">
+                <button  *ngIf="hide" mat-icon-button color="primary" (click)="agregarCarrito(product)">
                   <mat-icon>add_shopping_cart</mat-icon>
                 </button>
 

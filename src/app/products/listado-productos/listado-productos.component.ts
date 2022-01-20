@@ -17,7 +17,6 @@ export class ListadoProductosComponent implements OnInit {
   products = products
   searchStr: any;
   precio: any;
-  cantidad: any;
   presupuesto: any;
 
   constructor(public dialog: MatDialog, private carrito: CarritoService) {
@@ -40,7 +39,7 @@ export class ListadoProductosComponent implements OnInit {
     console.log(event)
     if (event >=0) {
       this.presupuesto = event;
-      this.cantidad = event;
+
     }
   }
 

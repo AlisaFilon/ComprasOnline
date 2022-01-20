@@ -9,7 +9,8 @@ import { CarritoService } from '../carrito.service';
 })
 export class ProductCardComponent implements OnInit {
  products = products;
-
+ puesto:any;
+hide:any;
 
 @Input() product:any;
 @Output() prsupuesto = new EventEmitter<number>();
@@ -17,7 +18,7 @@ export class ProductCardComponent implements OnInit {
   constructor (private carrito:CarritoService){ }
 
   ngOnInit(): void {
-
+this.hide=true;
   }
 
 
@@ -25,5 +26,13 @@ export class ProductCardComponent implements OnInit {
 agregarCarrito(product:any) {
   this.carrito.agregarCarrito(product);
   this.prsupuesto.emit(this.carrito.puestoCliente);
+  this.puesto = this.carrito.puestoCliente
+  if (this.puesto <1) {
+    (this.hide = false)
+
+  }
+
+
+
   }
 }
